@@ -1,0 +1,94 @@
+.contacts-container {
+    width: 100%;
+    height: 100vh;
+    padding: 150px 150px 0 ;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts-left {
+    width: 30%;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid red;
+}
+
+
+.contacts-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+    border-right: 2px solid red;
+}
+.contacts-left h1 {
+    font-family: CeraLight;
+    margin-bottom: 10px;
+}
+
+.contacts-left p {
+    font-family: CeraLight;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.contacts-left p span {
+    color: red;
+}
+
+.contacts-right {
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-right-socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-right-socials a {
+    text-align: right;
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-family: CeraLight;
+    font-weight: 1;
+    transition: all .5s;
+    &:hover {
+        opacity: .8;
+        transform: translateX(2px);
+    }
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 15px;
+}
+
+.map h1 {
+    font-family: CeraLight;
+    font-weight: 1;
+}
+
+.map h1 span {
+    color: red;
+}
+
+.contacts-right h1 {
+    font-family: CeraLight;
+    margin-bottom: 25px;
+    text-align: right;
+}
+
+.contacts-right svg {
+    margin-right: 10px;
+    background: linear-gradient(rgb(255, 0, 0),rgb(0, 0, 0));
+    border-radius: 100%;
+    padding: 2px;
+}

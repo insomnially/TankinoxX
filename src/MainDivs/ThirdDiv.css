@@ -1,0 +1,113 @@
+.third-container {
+    padding: 0 150px;
+    height: 100vh;
+
+}
+.third-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.third-products h1 {
+    font-size: 55px;
+    padding-top: 50px;
+    word-wrap: break-word;
+    padding-right: 45px;
+    font-family: CeraLight;
+    letter-spacing: 2px;
+}
+
+.third-products span {
+    background-color: red;
+    width: 5px;
+    height: 70px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.productspan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    cursor: default;
+    &:hover {
+        span {
+            transition: .3s;
+            opacity: 0;
+        }
+    }
+}
+
+
+.item {
+    background-image: url(../images/imagefirstdiv1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 250px;
+    height: 350px;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 18px;
+    border: 1px solid rgb(36, 35, 35);
+    margin-left: 50px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 10;
+    font-family: CeraLight;
+    box-shadow: 4px 4px 4px gray;
+    transform: translateY(0);
+    transition: all .4s;
+    &:hover {
+        transform: translateY(8px);
+    }
+}
+
+.item p {
+    padding-bottom: 15px;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+@media (max-width:768px) {
+    .productspan {
+        text-align: center;
+        width: 100vw;
+    }
+    .productspan h1 {
+        padding: 0;
+        padding-top: 50px;
+        font-size: 35px;
+    }
+
+    .third-container {
+        padding: 0;
+    }
+
+    .item {
+        margin: 0;
+        width: 180px;
+        height: 300px;
+    }
+
+    .items {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .third-container {
+        height: 100%;
+    }
+}

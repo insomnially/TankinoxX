@@ -1,0 +1,173 @@
+.containerfirst {
+    height: 100vh;
+    max-width: 100%;
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+
+.containerfirst.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.first {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .imagefirst {
+    background-image: url(../images/imagefirstdiv1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(80%);
+    background-position: center;
+    width: 60%;
+    height: 100vh;
+  }
+
+  .imagesecond {
+    background-image: url(../images/uniqueweldingtech.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(80%);
+    background-position: center;
+    width: 60%;
+    height: 100vh;
+  }
+
+.first h1 {
+    font-size: 45px;
+    font-weight: 600;
+    font-family: CeraLight;
+    width: 100%;
+    color: rgb(179, 176, 176);
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.first p {
+    font-size: 25px;
+    font-family: CeraLight;
+    width: 100%;
+    text-align: center;
+    border-top: 5px solid red;
+    padding-top: 30px;
+}
+
+.second h1 {
+    font-size: 45px;
+    font-weight: 600;
+    font-family: CeraLight;
+    width: 100%;
+    color: rgb(179, 176, 176);
+    text-align: center;
+}
+
+.second p {
+    font-size: 25px;
+    font-family: CeraLight;
+    width: 100%;
+    text-align: center;
+    border-top: 5px solid red;
+    padding-top: 30px;
+}
+
+.containersecond {
+    height: 100vh;
+    max-width: 100%;
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .second {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+  }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .containerfirst {
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200vh;
+    }
+    .imagefirst {
+        width: 100%;
+        margin-right: 20px;
+        animation-delay: 1.5s;
+    }
+    .first {
+        width: 90%;
+        animation-delay: 1s;
+    }
+    .first h1 {
+        font-size: 40px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+    }
+    .first p {
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .containersecond {
+        padding: 0;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 200vh;
+    }
+    .imagesecond {
+        width: 100%;
+        margin-right: 20px;
+        animation-delay: 1.5s;
+    }
+    .second {
+        width: 90%;
+        animation-delay: 1s;
+    }
+    .second h1 {
+        font-size: 40px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+    }
+    .second p {
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
+    }
+
+}

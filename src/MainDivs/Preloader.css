@@ -1,0 +1,68 @@
+.preloader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #131313;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-out;
+    opacity: 1;
+    z-index: 99999;
+  }
+  
+  .preloader-container.loaded {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .preloader-logo {
+    width: 150px;
+    height: auto;
+    position: relative;
+    z-index: 10;
+    animation: logoFlyIn 2s ease-out;
+  }
+  
+  @keyframes logoFlyIn {
+    0% {
+      top: -150px;
+      opacity: 0;
+      transform: scale(1.2);
+    }
+    100% {
+      top: 0;
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .preloader-logo-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+  }
+
+  .preloader-stripe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(145, 2, 2, 0.3), rgba(51, 51, 51, 0.3), rgba(145, 2, 2, 0.3));
+    animation: stripeMoveDiagonal 2s ease-in-out infinite;
+  }
+  @keyframes stripeMoveDiagonal {
+    0% {
+      left: -100%;
+    }
+    50% {
+        left: 100%;
+      }
+    100% {
+      left: -100%;
+    }
+  }

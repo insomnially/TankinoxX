@@ -1,0 +1,115 @@
+.techsecond-container {
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 150px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 100px;
+  }
+  
+  .techsecond-container h2 {
+    font-size: 40px;
+    font-family: CeraLight, sans-serif;
+    margin-bottom: 93px;
+    margin-top: 93px;
+    font-weight: bold;
+  }
+  
+  .techsecond-list-container {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+  }
+  
+  .vertical-line {
+    width: 5px;
+    background-color: red;
+    position: absolute;
+    left: 3%;
+    top: 0;
+    height: 0;
+    border-radius: 10px;
+  }
+  
+  .techsecond-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .techsecond-list li {
+    display: flex;
+    align-items: center;
+    padding: 0 160px;
+    text-align: start;
+    margin-bottom: 55px;
+  }
+  
+  .check-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    color: #ffffff;
+    margin-right: 10px;
+  }
+  
+  .techsecond-list h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .techsecond-list p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ccc;
+  }
+  
+  @media (max-width: 768px) {
+    .techsecond-container {
+      padding: 10px;
+    }
+  
+    .techsecond-container h2 {
+      font-size: 30px;
+      margin-bottom: 40px;
+      margin-top: 100px;
+    }
+  
+    .vertical-line {
+      left: 2%;
+    }
+    .techsecond-list {
+        padding: 0 20px;
+    }
+    .techsecond-list li {
+      padding: 0 10px;
+      margin-bottom: 30px;
+    }
+  
+    .check-icon {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .techsecond-list h3 {
+        font-size: 20px;
+    }
+  
+    .techsecond-list p {
+      font-size: 15px;
+    }
+  }

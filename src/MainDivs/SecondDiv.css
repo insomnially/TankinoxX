@@ -1,0 +1,159 @@
+.second-container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(6, 0, 0);
+    border-radius: 50px;
+    border: 2px solid gray;
+}
+.second-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1second-main {
+    font-size: 50px;
+    font-family: CeraLight;
+    margin-bottom: 134px;
+    align-self: flex-start;
+    margin-left: 99px;
+}
+
+.second-left {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.span1 {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 2%;
+    width: 5px;
+    border-radius: 5px;
+    height: 186px;
+    background-color: red;
+}
+.span2 {
+    position: absolute;
+    width: 5px;
+    border-radius: 5px;
+    height: 253px;
+    background-color: red;
+    margin-left: -34px;
+}
+
+.second-left-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.second-left-bottom p {
+    font-size: 25px;
+    margin-left: 70px;
+
+}
+
+.second-left-bottom h1 {
+    font-size: 27px;
+    width: 100%;
+}
+
+.second-left-bottom-2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 102px;
+}
+
+.second-left-bottom-2 h1 {
+    margin-bottom: 33px;
+}
+
+.second-left-bottom-2 p {
+    margin: 0;
+}
+
+.second-right {
+    background-image: url(../images/innovativetechnology.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 90vh;
+}
+
+@media (max-width:768px) {
+    .h1second-main {
+        margin: 0;
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .second-content {
+        margin: 0;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .second-container {
+        width: 100%;
+    }
+
+    .second-left {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 65vh;
+    }
+
+    .second-left-bottom p{
+        font-size: 15px;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .second-right {
+        width: 90%;
+        height: 300px;
+    }
+
+    .span1 {
+        left: 4%;
+        margin-bottom: 120px;
+        height: 150px;
+    }
+    .span2 {
+        right: 4%;
+        margin-top: 40px;
+        height: 150px;
+    }
+    .second-left-bottom-2{
+        margin: 0;
+    }
+    .second-left-bottom-2 p{
+        text-align: center;
+        padding-top: 0;
+    }
+    .second-left-bottom-2 h1{
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .second-left-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+}

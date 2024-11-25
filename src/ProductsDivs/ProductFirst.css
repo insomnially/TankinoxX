@@ -1,0 +1,177 @@
+.productsfirst-container {
+    width: 100%;
+    padding: 200px 150px  0;
+    height: 100vh;
+}
+
+.products-title {
+    text-align: center;
+    font-family: CeraLight;
+    font-weight: 1;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    border-bottom: 5px solid red;
+    border-radius: 50px;
+    padding-bottom: 20px;
+}
+
+.products-title span {
+    color: red;
+}
+
+.product-item {
+    width: 350px;
+    height: 400px;
+    background-image: url(../images/imagefirstdiv1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 25px;
+    font-size: 10px;
+    text-align: center;
+    font-family: CeraLight;
+    background-color: #1d1d1d;
+    box-shadow: 5px 5px 5px rgba(53, 53, 53, 1);
+    font-weight: 1;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover {
+        transform: translateY(-10px);
+    }
+
+}
+
+.products-items {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    gap: 50px;
+}
+
+.productsfirst-container2 {
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    background-color: #120101;
+}
+
+.productsfirst-container3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0 150px;
+    margin-bottom: 200px;
+}
+
+
+.products-title2 {
+    margin-top: 34px;
+    margin-bottom: 34px;
+    margin-left: 99px;
+    font-family: CeraLight;
+    font-weight: 1;
+    font-size: 48px;
+}
+
+.productsfirst-container4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.products-title3 {
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.products-first-items {
+    display: flex;
+    padding: 0 150px;
+    text-align: center;
+}
+
+.product-first-item h1 {
+    margin-bottom: 47px;
+    font-size: 30px;
+}
+
+.product-first-item p {
+    font-size: 18px;
+    font-family: CeraLight;
+    font-weight: 1;
+}
+
+
+.product-first-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+}
+.product-first-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: white;
+    margin-bottom: 48px;
+}
+
+.product-first1-image {
+    width: 55%;
+    height: 100%;
+    background-image: url(../images/imagefirstdiv1.png);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(90%);
+    background-repeat: no-repeat;
+
+}
+
+.productsfirst-container2 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding: 0 150px;
+}
+.product-first-description {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+}
+
+.product-first-description h1 {
+    margin-bottom: 24px;
+    border-bottom: 5px solid red;
+    padding-bottom: 10px;
+    font-size: 50px;
+}
+
+.product-first-description p {
+    font-family: CeraLight;
+    font-weight: 1;
+    font-size: 20px;
+}
+
+.productsfirst-container4 span {
+    color: red;
+}
+.productsfirst-container4 h1 {
+    font-family: CeraLight;
+}
+

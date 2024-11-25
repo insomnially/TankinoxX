@@ -1,0 +1,125 @@
+.techfirst-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    padding: 20px;
+    color: #fff;
+    height: auto;
+  }
+  
+  .techfirst-content {
+    text-align: center;
+    padding: 0 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .techfirst-content span {
+    color: red;
+  }
+
+  .techfirst-content h1 {
+    font-family: CeraLight;
+    font-weight: 600;
+    width: 70%;
+  }
+  
+  .techfirst-card {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #1a1a1a;
+    border-radius: 30px;
+    padding: 20px;
+    border: 5px solid rgb(10, 10, 10);
+  }
+  
+
+  .techfirst-image {
+    background-image: url(../images/imagefirstdiv1.png);
+    width: 800px;
+    height: 700px;
+    z-index: -1;
+    background-size: 130%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .techfirst-description h1 {
+    padding-bottom: 15px;
+    font-size: 48px;
+    font-family: CeraLight;
+    font-weight: 1;
+    border-bottom: 5px solid red;
+    margin-bottom: 40px;
+  }
+
+  .techfirst-description p {
+    font-family: CeraLight;
+    font-weight: 1;
+    font-size: 25px;
+    text-align: left;
+    width: 95%;
+  }
+
+  .techfirst-description {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+
+  }
+
+  @media (max-width: 768px) {
+    .techfirst-container {
+      margin-top: 60px;
+      padding: 10px;
+    }
+  
+    .techfirst-content {
+      padding: 0 20px;
+    }
+  
+    .techfirst-content h1 {
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 15px;
+      margin-top: 50px;
+      width: 100%;
+    }
+  
+    .techfirst-card {
+      flex-direction: column;
+      padding: 10px;
+      gap: 10px;
+    }
+  
+    .techfirst-image {
+      width: 100%;
+      background-size: cover;
+    }
+  
+    .techfirst-description h1 {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+  
+    .techfirst-description p {
+      font-size: 20px;
+      text-align: center;
+      width: 100%;
+      padding: 20px;
+      width: 100%;
+    }
+  
+    .techfirst-description {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
