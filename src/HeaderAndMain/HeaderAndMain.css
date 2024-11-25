@@ -214,10 +214,6 @@ ul {
         align-items: center;
     }
 
-    .image {
-        background-size: cover;
-    }
-
     .menu {
         position: absolute;
         right: 0;
@@ -308,8 +304,8 @@ ul {
     }
     
     .image {
-        height: 100vh;
-        background-image: url(../images/main-image.png);
+        background-position: center !important;
+        background-size: cover !important;
     }
 
 

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { animateScroll as scroll } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
+import '../HeaderAndMain/HeaderAndMain.css'
 
 export default function FirstDiv() {
   const { ref: containerRef1, inView: inView1 } = useInView({
