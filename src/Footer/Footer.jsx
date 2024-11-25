@@ -19,9 +19,9 @@ export default function Footer() {
         </div>
         <div className="footer-column">
           <ul className='footer-navigation2'>
-            <li><Link to="/about">{t("aboutUsfooter")}</Link></li>
-            <li><Link to="/careers">{t("careersfooter")}</Link></li>
-            <li><Link to="/contacts">{t("contactsfooter")}</Link></li>
+            <li><Link to="/Tankinox/about">{t("aboutUsfooter")}</Link></li>
+            <li><Link to="/Tankinox/careers">{t("careersfooter")}</Link></li>
+            <li><Link to="/Tankinox/contacts">{t("contactsfooter")}</Link></li>
           </ul>
           <div className="socials">
             <a href='https://instagram.com' className='social'><FaInstagram /></a>

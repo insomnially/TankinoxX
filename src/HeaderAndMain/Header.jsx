@@ -29,13 +29,13 @@ export default function Header() {
       {isLoading && <Preloader />}
       <div className="header">
         <ul>
-          <li><Link to="/about">{t('about')}</Link></li>
-          <li><Link to="/technologies">{t('technologies')}</Link></li>
-          <li><Link to="/products">{t('products')}</Link></li>
-          <li className="logo"><Link to="/">TANKINOX</Link></li>
-          <li><Link to="/services">{t('services')}</Link></li>
-          <li><Link to="/careers">{t('careers')}</Link></li>
-          <li><Link to="/contacts">{t('contacts')}</Link></li>
+          <li><Link to="/Tankinox/about">{t('about')}</Link></li>
+          <li><Link to="/Tankinox/technologies">{t('technologies')}</Link></li>
+          <li><Link to="/Tankinox/products">{t('products')}</Link></li>
+          <li className="logo"><Link to="/Tankinox">TANKINOX</Link></li>
+          <li><Link to="/Tankinox/services">{t('services')}</Link></li>
+          <li><Link to="/Tankinox/careers">{t('careers')}</Link></li>
+          <li><Link to="/Tankinox/contacts">{t('contacts')}</Link></li>
           <li>
             <select
               onChange={(e) => changeLanguage(e.target.value)}

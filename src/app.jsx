@@ -29,13 +29,13 @@ function AppContent() {
         <Preloader />
       ) : (
         <Routes>
-          <Route path="/" element={<MainPage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/technologies" element={<Technologies />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/Tankinox" element={<MainPage />} />
+          <Route path="/Tankinox/about" element={<About />} />
+          <Route path="/Tankinox/technologies" element={<Technologies />} />
+          <Route path="/Tankinox/products" element={<Products />} />
+          <Route path="/Tankinox/services" element={<Services />} />
+          <Route path="/Tankinox/careers" element={<Careers />} />
+          <Route path="/Tankinox//contacts" element={<Contacts />} />
         </Routes>
       )}
     </>
