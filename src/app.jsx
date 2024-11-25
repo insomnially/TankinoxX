@@ -35,7 +35,7 @@ function AppContent() {
           <Route path="/TankinoxX/products" element={<Products />} />
           <Route path="/TankinoxX/services" element={<Services />} />
           <Route path="/TankinoxX/careers" element={<Careers />} />
-          <Route path="/TankinoxX//contacts" element={<Contacts />} />
+          <Route path="/TankinoxX/contacts" element={<Contacts />} />
         </Routes>
       )}
     </>
