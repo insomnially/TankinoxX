@@ -72,7 +72,7 @@ export default function ProductFirst() {
             className="product-item"
             key={index}
             initial={{ opacity: 0, x: 50 }}
-            animate={processInView ? { opacity: 1, y: 0 } : {}}
+            animate={processInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1, delay: 0.3 }}
           >
             <h1>{t(`productFirst.processItem${index + 1}`)}</h1>

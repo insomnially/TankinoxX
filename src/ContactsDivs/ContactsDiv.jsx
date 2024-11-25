@@ -50,9 +50,8 @@ export default function ContactsDiv() {
           </div>
         </motion.div>
 
-        {/* Left Section */}
         <motion.div className="contacts-left" variants={containerVariants}>
-          <motion.h1 variants={childVariants}>{t('phone')}</motion.h1>
+          <motion.h1 variants={childVariants}>{t('phonecontacts')}</motion.h1>
           <motion.p className="phone-number" variants={childVariants}>
             +373 (999) 999-99-99
           </motion.p>
@@ -86,7 +85,7 @@ export default function ContactsDiv() {
             style={{ position: 'relative' }}
           ></iframe>
           <motion.h1 variants={childVariants}>
-            {t('onMaps')} <span>{t('maps')}</span>
+            {t('onMaps')}
           </motion.h1>
         </motion.div>
       </div>

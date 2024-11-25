@@ -131,8 +131,6 @@
     .first h1 {
         font-size: 40px;
         text-align: center;
-        align-items: center;
-        display: flex;
         width: 100%;
     }
     .first p {
@@ -170,4 +168,21 @@
         text-align: center;
     }
 
+    .imagep {
+        margin: 0;
+    }
+
+    .first {
+        height: 100%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .imagefirst {
+        margin: 0;
+    }
+
+    .containerfirst {
+        height: 100%;
+    }
 }

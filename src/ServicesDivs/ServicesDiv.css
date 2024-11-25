@@ -36,3 +36,12 @@
     flex-wrap: wrap;
     margin-bottom: 100px;
 }
+
+
+@media (max-width:768px) {
+    .services-container {
+        padding: 0 15px;
+        margin-top: 150px;
+
+    }
+}

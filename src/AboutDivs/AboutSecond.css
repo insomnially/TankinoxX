@@ -134,7 +134,10 @@
     .aboutsecond-card-description2 {
       width: 100%;
     }
-
+    .aboutsecond-image {
+      width: 100%;
+      height: 350px;
+    }
     .aboutsecond-card2 {
       flex-direction: column;
       margin-bottom: 50px;

@@ -57,7 +57,7 @@ export default function Header() {
       </div>
       <div className={`fullscreen-menu ${menuOpen ? 'open' : ''}`}>
         <ul>
-          <li><Link to="/TankinoxX">{t('about')}</Link></li>
+          <li><Link to="/TankinoxX/about">{t('about')}</Link></li>
           <li><Link to="/TankinoxX/technologies">{t('technologies')}</Link></li>
           <li><Link to="/TankinoxX/products">{t('products')}</Link></li>
           <li><Link to="/TankinoxX/services">{t('services')}</Link></li>

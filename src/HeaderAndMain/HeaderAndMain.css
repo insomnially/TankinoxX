@@ -81,26 +81,22 @@ ul {
 
 .imagep {
     position: absolute;
-    font-size: 50px;
+    font-size: 60px;
     left: 4%;
-    margin-top: 36%;
+    margin-top: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     text-align: left;
     width: 40%;
     gap: 10px;
     z-index: 1;
     transition: all .7s;
     animation: fadeIn 1.5s ease forwards;
+    border-left: 10px solid red;
     &:hover {
-        border-radius: 10px;
         opacity: .7;
-        transform: translateY(1px);
-        .red1 {
-            opacity: 0;
-        }
+        border-left: 15px solid red;
     }
 }
 
@@ -174,27 +170,34 @@ ul {
     color: black;
 }
 
-.red1 {
-    background-image: url(../images/red1.png);
-    width: 10px;
-    height: 230px;
-    border-radius: 5px;
-    transition: all .7s;
-}
-
 
 
 @media (max-width:768px) {
 
+
+    * {
+        box-sizing:content-box;
+    }
     .imagep {
         font-size: 27px;
-        top: 5.5%;
-        left: 2%;
+        top: 3%;
+        margin: 0;
+        left: 0;
+        width: 100%;
+        border-top: 5px solid red;
+        border-bottom: 5px solid red;
+        font-size: 33px;
+        text-align: center;
+        border-left: 0;
+        padding: 15px;
     }
     
     .red1 {
         height: 150px;
-        width:10px;
+        width:5px;
+        left: -3%;
+        position: absolute;
+        display: contents;
     }
     li {
         display: none;
@@ -208,6 +211,7 @@ ul {
     ul {
         justify-content: center;
         padding: 0;
+        align-items: center;
     }
 
     .image {
@@ -225,7 +229,7 @@ ul {
     .menuall {
         display: flex;
         position: absolute;
-        right: 10%;
+        right: 15%;
         top: 58%;
         font-size: 40px;
         z-index: 100;
@@ -274,9 +278,9 @@ ul {
         position: fixed;
         display: flex;
         height: 100%;
-        background-color: rgba(29, 29, 29, 0.8);
+        background-color: rgba(29, 29, 29, .95);
         color: white;
-        z-index: 1;
+        z-index: 9;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -333,25 +337,32 @@ ul {
 
       .fullscreen-menu select {
         border:none;
-        box-shadow: 0px 0px 5px rgb(122, 122, 122);
         position: absolute;
         border-radius: 5px;
         top: 9%;
         z-index: 555;
-        left: 45%;
-        background-color: rgba(0, 0, 0, .1);
+        left: 37%;
+        background-color: rgba(31, 30, 30, 0.1);
         color: rgb(255, 255, 255);
         font-family: Cera;
         display: flex;
+        font-size: 18px;
         justify-content: center;
         align-items: center;
         text-align: center;
         transition: all .3s;
+        padding: 5px 25px;
+        outline: none;
+        border: none;
       }
 
       .fullscreen-menu select option {
         text-align: center;
-        background-color: rgba(0, 0, 0, .1);
+        background-color: rgb(255, 255, 255);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
 }

@@ -92,3 +92,46 @@
     border-radius: 100%;
     padding: 2px;
 }
+
+@media (max-width:768px) {
+    .contacts-container {
+        padding: 0;
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 50px;
+        margin-top: 150px;
+        border: 0px;
+        width: 95%;
+        padding: 0 12px;
+    }
+
+    .contacts-right {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-right: 0px;
+    }
+
+
+    .contacts-left {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        border: 0px;
+    }
+
+    .contacts-left p {
+        text-align: center;
+    }
+    .contacts-right-socials a {
+        text-align: center;
+        
+    }
+
+    .contacts-wrapper {
+        flex-direction: column-reverse;
+        gap: 50px;
+        border: 0px;
+    }
+}
