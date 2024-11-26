@@ -69,7 +69,6 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-attachment: fixed;
     position: relative;
     filter: brightness(50%);
     width: 100%;
@@ -308,7 +307,6 @@ ul {
     .image {
         background-position: center !important;
         background-size: cover !important;
-        background-attachment: fixed;
         background-image: url(../images/main-image.jpg);
     }
 
