@@ -37,44 +37,40 @@ export default function AboutSecond() {
     triggerOnce: true,
   });
 
-  const fadeIn = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },
-  };
-
   return (
     <div className="aboutsecond-container">
       <div className="aboutsecond-header">
         <motion.h1
-          initial="hidden"
-          animate={card1InView ? "visible" : "hidden"}
-          variants={fadeIn}
+          initial={{ opacity: 0, y: 50 }}
+          animate={card1InView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 1 }}
           ref={card1Ref}
         >
           {t("whyTankinox")}
         </motion.h1>
       </div>
+
       <div className="aboutsecond-content">
         <div className="aboutsecond-card1" ref={card1Ref}>
           <motion.div
             className="aboutsecond-image"
             style={{ backgroundImage: `url(${aboutimage1})` }}
-            initial="hidden"
-            animate={card1InView ? "visible" : "hidden"}
-            variants={fadeIn}
+            initial={{ opacity: 0, y: 50 }}
+            animate={card1InView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 1 }}
           ></motion.div>
           <div className="aboutsecond-card-description1">
             <motion.h2
-              initial="hidden"
-              animate={card1InView ? "visible" : "hidden"}
-              variants={fadeIn}
+              initial={{ opacity: 0, y: 50 }}
+              animate={card1InView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 1.2 }}
             >
               {t("precisionQuality")}
             </motion.h2>
             <motion.p
-              initial="hidden"
-              animate={card1InView ? "visible" : "hidden"}
-              variants={fadeIn}
+              initial={{ opacity: 0, y: 50 }}
+              animate={card1InView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 1.4 }}
             >
               {t("precisionQualityText")}
             </motion.p>
@@ -85,22 +81,22 @@ export default function AboutSecond() {
           <motion.div
             className="aboutsecond-image"
             style={{ backgroundImage: `url(${aboutimage2})` }}
-            initial="hidden"
-            animate={card2InView ? "visible" : "hidden"}
-            variants={fadeIn}
+            initial={{ opacity: 0, y: 50 }}
+            animate={card2InView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 1 }}
           ></motion.div>
           <div className="aboutsecond-card-description2">
             <motion.h2
-              initial="hidden"
-              animate={card2InView ? "visible" : "hidden"}
-              variants={fadeIn}
+              initial={{ opacity: 0, y: 50 }}
+              animate={card2InView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 1.2 }}
             >
               {t("innovationDriven")}
             </motion.h2>
             <motion.p
-              initial="hidden"
-              animate={card2InView ? "visible" : "hidden"}
-              variants={fadeIn}
+              initial={{ opacity: 0, y: 50 }}
+              animate={card2InView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 1.4 }}
             >
               {t("innovationDrivenText")}
             </motion.p>
@@ -111,22 +107,22 @@ export default function AboutSecond() {
           <motion.div
             className="aboutsecond-image"
             style={{ backgroundImage: `url(${aboutimage3})` }}
-            initial="hidden"
-            animate={card3InView ? "visible" : "hidden"}
-            variants={fadeIn}
+            initial={{ opacity: 0, y: 50 }}
+            animate={card3InView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 1 }}
           ></motion.div>
           <div className="aboutsecond-card-description1">
             <motion.h2
-              initial="hidden"
-              animate={card3InView ? "visible" : "hidden"}
-              variants={fadeIn}
+              initial={{ opacity: 0, y: 50 }}
+              animate={card3InView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 1.2 }}
             >
               {t("customSolutions")}
             </motion.h2>
             <motion.p
-              initial="hidden"
-              animate={card3InView ? "visible" : "hidden"}
-              variants={fadeIn}
+              initial={{ opacity: 0, y: 50 }}
+              animate={card3InView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 1.4 }}
             >
               {t("customSolutionsText")}
             </motion.p>
@@ -137,22 +133,22 @@ export default function AboutSecond() {
           <motion.div
             className="aboutsecond-image"
             style={{ backgroundImage: `url(${aboutimage4})` }}
-            initial="hidden"
-            animate={card4InView ? "visible" : "hidden"}
-            variants={fadeIn}
+            initial={{ opacity: 0, y: 50 }}
+            animate={card4InView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 1 }}
           ></motion.div>
           <div className="aboutsecond-card-description2">
             <motion.h2
-              initial="hidden"
-              animate={card4InView ? "visible" : "hidden"}
-              variants={fadeIn}
+              initial={{ opacity: 0, y: 50 }}
+              animate={card4InView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 1.2 }}
             >
               {t("comprehensiveServices")}
             </motion.h2>
             <motion.p
-              initial="hidden"
-              animate={card4InView ? "visible" : "hidden"}
-              variants={fadeIn}
+              initial={{ opacity: 0, y: 50 }}
+              animate={card4InView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 1.4 }}
             >
               {t("comprehensiveServicesText")}
             </motion.p>
@@ -160,22 +156,17 @@ export default function AboutSecond() {
         </div>
 
         <div className="ourteam" ref={teamRef}>
-          <motion.span
-            initial="hidden"
-            animate={teamInView ? "visible" : "hidden"}
-            variants={fadeIn}
-          ></motion.span>
           <motion.h1
-            initial="hidden"
-            animate={teamInView ? "visible" : "hidden"}
-            variants={fadeIn}
+            initial={{ opacity: 0, x: -50 }}
+            animate={teamInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 1 }}
           >
             {t("ourTeam")}
           </motion.h1>
           <motion.p
-            initial="hidden"
-            animate={teamInView ? "visible" : "hidden"}
-            variants={fadeIn}
+            initial={{ opacity: 0, x: -50 }}
+            animate={teamInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 1.2 }}
           >
             {t("ourTeamText")}
           </motion.p>

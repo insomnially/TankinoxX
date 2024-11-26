@@ -7,6 +7,8 @@
   
   .aboutthird-header h1 {
     font-size: 2.5rem;
+    font-family: CeraLight;
+    font-weight: 1;
     margin-bottom: 40px;
   }
   
@@ -19,7 +21,6 @@
   
   .aboutthird-card {
     background-color: #1a1a1a;
-
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(73, 73, 73);
     text-align: center;
@@ -30,7 +31,6 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
-    transition: all .3s;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -111,6 +111,10 @@
       max-width: 100%;
       align-self: center;
 
+    }
+
+    .aboutthird-description p {
+      padding: 0;
     }
 
     .aboutthird-card {

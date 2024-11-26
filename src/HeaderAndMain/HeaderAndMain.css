@@ -69,6 +69,7 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
+    background-attachment: fixed;
     position: relative;
     filter: brightness(50%);
     width: 100%;
@@ -308,6 +309,7 @@ ul {
         background-position: center !important;
         background-size: cover !important;
         background-image: url(../images/main-image.jpg);
+        background-attachment: scroll;
     }
 
 
@@ -334,33 +336,21 @@ ul {
       }
 
       .fullscreen-menu select {
-        border:none;
         position: absolute;
-        border-radius: 5px;
-        top: 9%;
+        border-radius: 20px;
         z-index: 555;
-        left: 37%;
-        background-color: rgba(31, 30, 30, 0.1);
-        color: rgb(255, 255, 255);
+        top: 0;
+        margin-top: 20%;
+        color: rgb(0, 0, 0);
         font-family: Cera;
-        display: flex;
         font-size: 18px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        transition: all .3s;
-        padding: 5px 25px;
+        padding: 5px 15px;
         outline: none;
         border: none;
       }
 
       .fullscreen-menu select option {
-        text-align: center;
-        background-color: rgb(255, 255, 255);
         color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
       }
 
 }

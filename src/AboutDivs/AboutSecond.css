@@ -15,7 +15,8 @@
   .aboutsecond-header h1 {
     font-size: 2.5rem;
     margin-bottom: 50px;
-    font-family: Fank;
+    font-family: CeraLight;
+    font-weight: 1;
   }
   
   .aboutsecond-content {
@@ -84,22 +85,26 @@
 
 
   .ourteam {
+    border-left: 5px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
   }
   .ourteam h1 {
     font-size: 35px;
     font-family: CeraLight;
     font-weight: 600;
-    margin-bottom: 25px;
+
   }
   .ourteam p {
     font-size: 18px;
     font-family: CeraLight;
     font-weight: 1;
-    width: 70%;
+    padding: 45px;
   }
 
   .aboutsecond-image {
@@ -111,16 +116,6 @@
     border-radius: 20px;
   }
   
-
-  .ourteam span {
-    background-color: red;
-    width: 6px;
-    border-radius: 10px;
-    height: 150px;
-    margin-top: 25px;
-    position: absolute;
-    left: 24%;
-  }
   @media (max-width:768px) {
     .aboutsecond-card1 {
       flex-direction: column;
@@ -151,17 +146,14 @@
     }
 
     .ourteam {
-      margin-top: 100px;
-      ;
+      margin: 0;
+      width: 95%;
+
     }
 
     .ourteam p {
       width: 95%;
-    }
 
-    .ourteam span {
-      left: 2%;
-      height: 200px;
     }
 }
   

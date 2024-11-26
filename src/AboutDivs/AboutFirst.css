@@ -38,7 +38,8 @@
 @media (max-width:768px) {
     .aboutfirst-container {
         flex-direction: column;
-        padding: 0 10px;
+        padding: 0 15px;
+        width: 95%;
         margin-bottom: 250px;
         padding-top: 200px;
     }  

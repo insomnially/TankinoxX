@@ -10,7 +10,6 @@
     background-color: #a1a0a0;
     border-radius: 25px;
     box-shadow: 5px 5px 5px rgba(138, 137, 137, 0.5);
-    transition: all .3s;
     color: black;
     font-family: CeraLight;
     font-weight: 1;
@@ -23,9 +22,6 @@
     border: 2px solid red;
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    &:hover {
-        transform: translateY(-10px);
-    }
 }
 
 .services-items {

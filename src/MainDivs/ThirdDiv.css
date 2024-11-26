@@ -61,11 +61,6 @@
     font-weight: 10;
     font-family: CeraLight;
     box-shadow: 4px 4px 4px gray;
-    transform: translateY(0);
-    transition: all .4s;
-    &:hover {
-        transform: translateY(8px);
-    }
 }
 
 .item p {
