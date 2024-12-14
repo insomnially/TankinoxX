@@ -1,0 +1,387 @@
+.engineering-main-image {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/engineeringmain.jpg);
+    filter:brightness(40%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.engineeringp {
+    position: absolute;
+    font-size: 4rem;
+    right: 0%;
+    text-align: center;
+    gap: 10px;
+    top: 0;
+    margin-top: 36%;
+    z-index: 11;
+    transition: all 1s;
+    color: rgb(255, 0, 0);
+    animation: fadeIn 1.5s ease forwards;
+    border-right: 8px solid rgb(255, 0, 0);
+    padding: 50px;
+    text-shadow: 0 10px 30px ;
+    cursor: pointer;
+    background-color: transparent;
+    overflow: hidden;
+    font-family: CeraLight;
+    &:hover {
+        color: white;
+    }
+}
+
+.engineeringp span {
+    font-size: 3rem;
+    font-weight: 1;
+}
+
+.engineeringp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 8px;
+    background-color: rgb(255, 0, 0);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.engineering-extra-section {
+    padding: 50px;
+    background-color: #0c0c0c;
+    border-top: 2px solid #ff0000;
+    margin-top: 200px;
+    border-bottom: 2px solid red;
+    margin-bottom: 200px;
+  }
+  
+  .engineering-extra-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .engineering-extra-content h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .engineering-extra-content p {
+    font-size: 1.2rem;
+    color: #a3a3a3;
+    line-height: 1.6;
+  }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.engineeringp:hover::before {
+    width: 100%;
+    z-index: -1;
+    color: white;
+}
+
+.engineeringp span {
+    color: rgb(255, 255, 255);
+}
+
+.engineering-cards {
+    height: 100%;
+    width: 100%;
+    padding: 0 150px;
+    margin: 50px 0;
+}
+
+.engineering-card-image {
+    background-size: cover;
+    filter: brightness(70%);
+    background-position: center;
+    width: 35%;
+    height: 600px;
+    background-repeat: no-repeat;
+}
+
+.engineering-card-image.c1 {
+    background-image: url(../images/engineering1.jpg);
+}
+
+.engineering-card-image.c2 {
+    background-image: url(../images/engineering2.png);
+}
+
+.engineering-card-image.c3 {
+    background-image: url(../images/image1.jpg);
+}
+
+.engineering-card-image.c4 {
+    background-image: url(../images/image10.jpg);
+}
+
+.engineering-card-description {
+    width: 35%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    text-align: left;
+    background-color: rgb(119, 1, 1);
+}
+
+.engineering-card-description.c2 {
+    background-color: rgb(49, 49, 49);
+    text-align: right;
+}
+
+
+.engineering-card-description.c2 h1 {
+    text-align: right;
+    width: 100%;
+}
+
+.engineering-card-description h1 {
+    margin: 10px 0;
+    padding: 5px 0;
+    font-family: CeraProBold;
+    font-size: 2rem;
+    border-bottom: 3px solid rgb(255, 255, 255,.5);
+}
+
+.engineering-card-description p {
+    font-size: 1rem;
+}
+
+@font-face {
+    font-family: CeraProBold;
+    src: url(../fonts/CeraProBold.ttf);
+}
+
+.engineering-card {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.engineering-card.c1 {
+    flex-direction: row;
+}
+
+.engineering-card.c2 {
+    flex-direction: row-reverse;
+}
+
+.engineering-title {
+    width: 100%;
+    text-align: center;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.engineering-title h1 {
+    font-size: 2.5rem;
+    font-family: CeraProBold;
+    text-shadow: 0 10px 30px rgba(255, 0, 0, 0.623);
+}
+
+.engineering-title p {
+    font-family: CeraLight;
+    font-weight: 1;
+    font-size: 1.25rem;
+    text-shadow: 0 10px 30px rgba(255, 255, 255, 0.459);
+}
+
+.engineering-title span {
+    color: red;
+}
+
+.automation-section {
+    padding: 50px 150px;
+
+    margin: 100px 0;
+    border-radius: 10px;
+
+}
+
+.automation-content {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 150px;
+}
+
+.automation-content h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    font-family: CeraProBold;
+    text-shadow: 0 10px 30px rgba(255, 0, 0, 0.466);
+}
+
+.automation-content p {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-family: CeraLight;
+    font-weight: 1;
+
+}
+
+
+.buttoncontacts {
+    padding: 20px;
+    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.105);
+    font-size: 1.5rem;
+    transition: all .3s;
+    &:hover {
+        box-shadow: 0px 10px 30px rgba(255, 253, 253, 0.150);
+        transition: all .3s;
+    }
+}
+.buttonwrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+.automation-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border-left: 3px solid red;
+    padding: 25px;
+}
+
+.automation-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    cursor: default;
+    &:hover {
+        transform: translateX(15px);
+    }
+}
+
+
+
+.checkmark {
+    color: #ff0000;
+    text-shadow: 0 10px 30px;
+    font-size: 2.5rem;
+    margin-right: 10px;
+}
+
+
+@media (max-width:768px) {
+    .engineeringp::before {
+        display: contents;
+    }
+
+    .engineering-main-image {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .engineeringp {
+        border: 5px solid red;
+        padding: 15px 0;
+        width: 100%;
+        font-size: 3.25rem;
+        margin-top: 85%;
+        border-left: 0;
+        border-right: 0;
+        backdrop-filter: blur(10px);
+    }
+
+    .engineering-cards {
+        padding: 0 15px;
+        width: 95%;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .engineering-card.c1 {
+        flex-direction: column;
+    }
+
+    .engineering-card.c2 {
+        flex-direction: column;
+    }
+
+    .engineering-card-description {
+        width: 95%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .engineering-card-image {
+        width: 95%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-attachment: fixed;
+    }
+
+    .engineering-card-description {
+        padding: 0;
+        text-align: center;
+    }
+
+    .engineering-card-description p {
+        padding: 15px;
+    }
+
+    .engineering-card-description.c2 {
+        text-align: center;
+    }
+    .engineering-card-description.c2 h1 {
+        text-align: center;
+    }
+
+    .automation-section {
+        padding: 0;
+    }
+
+    .automation-content {
+        padding: 0;
+    }
+
+    .checkmark {
+        font-size: 2rem;
+    }
+
+    .automation-list-item {
+        font-size: 1rem;
+        text-align: left;
+        height: 100%;
+    }
+
+    .automation-list {
+        display: flex;
+        align-items: flex-start;
+        padding: 5px;
+        border: none;
+    }
+
+}
+

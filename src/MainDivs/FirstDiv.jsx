@@ -1,9 +1,12 @@
 import './FirstDiv.css';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { animateScroll as scroll } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
-import '../HeaderAndMain/HeaderAndMain.css'
+import { MdOutlineArrowOutward } from "react-icons/md";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
+import { animateScroll as scroll } from 'react-scroll';
+import '../HeaderAndMain/HeaderAndMain.css';
 
 export default function FirstDiv() {
   const { ref: containerRef1, inView: inView1 } = useInView({
@@ -21,19 +24,19 @@ export default function FirstDiv() {
     triggerOnce: true,
   });
 
-  const scrollToTop = () => {
-    scroll.scrollToTop({
-      duration: 100,
+  const { t } = useTranslation();
+
+  const handleScrollDown = () => {
+    scroll.scrollMore(window.innerHeight, {
+      duration: 500,
       smooth: true,
     });
   };
 
-  const { t } = useTranslation();
-
   return (
     <>
-      <div className="imagep" data-scroll-ignore>
-        <span className="red1"></span>
+      <div className="imagep" onClick={handleScrollDown}>
+        <div className="arrow"><MdOutlineArrowOutward /></div>
         {t('highQualityTitle')}
       </div>
       <motion.div
@@ -52,6 +55,7 @@ export default function FirstDiv() {
         animate={inView1 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1 }}
       >
+        
         <motion.div
           className="first"
           initial={{ opacity: 0, x: -30 }}
@@ -66,12 +70,22 @@ export default function FirstDiv() {
             {t('brandTitle')}
           </motion.h1>
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={inView1 ? { opacity: 1, y: 0 } : {}}
+            initial={{ opacity: 0, x: -20 }}
+            animate={inView1 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1, delay: 1.2 }}
           >
             {t('brandText')}
           </motion.p>
+          <motion.div
+            className="buttonabout"
+            initial={{ opacity: 0, x: -20 }}
+            animate={inView1 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, delay: 1.3 }}
+          >
+            <Link to="/TankinoxX/about">
+              {t('aboutTankinox')} <FaArrowRightLong />
+            </Link>
+          </motion.div>
         </motion.div>
         <motion.div
           className="imagefirst"
@@ -101,19 +115,29 @@ export default function FirstDiv() {
           transition={{ duration: 1, delay: 1 }}
         >
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={inView2 ? { opacity: 1, y: 0 } : {}}
+            initial={{ opacity: 0, x: 20 }}
+            animate={inView2 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1, delay: 1.5 }}
           >
             {t('weldingTitle')}
           </motion.h1>
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={inView2 ? { opacity: 1, y: 0 } : {}}
+            initial={{ opacity: 0, x: -20 }}
+            animate={inView2 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1, delay: 1.8 }}
           >
             {t('weldingText')}
           </motion.p>
+          <motion.div
+            className="buttontechnologies"
+            initial={{ opacity: 0, x: 20 }}
+            animate={inView2 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 1, delay: 2.1 }}
+          >
+            <Link to="/TankinoxX/technologies">
+              {t('TechnologiesTankinox')} <FaArrowRightLong />
+            </Link>
+          </motion.div>
         </motion.div>
       </motion.div>
     </>

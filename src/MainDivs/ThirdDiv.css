@@ -1,6 +1,11 @@
 .third-container {
     padding: 0 150px;
     height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 .third-products {
@@ -9,13 +14,15 @@
     align-items: center;
     flex-direction: column;
 }
-.third-products h1 {
+.products-title1 {
     font-size: 55px;
-    padding-top: 50px;
+    margin-top: 50px;
+    padding-left: 15px;
+    text-shadow: 0 10px 30px rgba(255, 255, 255, 0.247);
     word-wrap: break-word;
-    padding-right: 45px;
     font-family: CeraLight;
     letter-spacing: 2px;
+    border-left: 5px solid red;
 }
 
 .third-products span {
@@ -40,27 +47,50 @@
     }
 }
 
+.buttonmore {
+    font-size: 20px;
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 15px;
+    align-items: center;
+    &:hover {
+        svg {
+            transition: all .5s ease-out;
+            rotate: -90deg;
+        }
+    }
+  }
+
+  .buttonmore a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .buttonmore svg {
+    transition: all .5s ease;
+  }
+
 
 .item {
-    background-image: url(../images/imagefirstdiv1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 250px;
-    height: 350px;
+    width: 300px;
+    height: 450px;
     display: flex;
     cursor: pointer;
     flex-direction: column-reverse;
     align-items: center;
-    font-size: 18px;
-    border: 1px solid rgb(36, 35, 35);
-    margin-left: 50px;
+    font-size: .7rem;
     border-radius: 15px;
     text-align: center;
     margin-bottom: 50px;
-    font-weight: 10;
+    padding: 15px;
+    font-weight: 1;
     font-family: CeraLight;
-    box-shadow: 4px 4px 4px gray;
+    box-shadow: 0 10px 30px rgba(95, 95, 95, 0.3);
 }
 
 .item p {
@@ -71,6 +101,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    gap: 100px;
     flex-wrap: wrap;
     padding-top: 50px;
 }
@@ -83,7 +114,9 @@
     .productspan h1 {
         padding: 0;
         padding-top: 50px;
-        font-size: 35px;
+        font-size: 45px;
+        font-weight: 1;
+        font-family: CeraLight;
     }
 
     .third-container {
@@ -92,14 +125,21 @@
 
     .item {
         margin: 0;
-        width: 180px;
-        height: 300px;
+        width: 250px;
+        height: 350px;
+        background-size: 75% !important;
+    }
+
+    .products-title1 {
+        text-align: center;
+        font-size: 3rem;
     }
 
     .items {
         display: flex;
         justify-content: center;
         gap: 25px;
+        margin-bottom: 55px;
     }
 
     .third-container {

@@ -1,0 +1,346 @@
+.cutting-main-image {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/cuttingmainimage.jpg);
+    filter:brightness(40%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cuttingp {
+    position: absolute;
+    font-size: 4rem;
+    right: 0%;
+    text-align: center;
+    gap: 10px;
+    top: 0;
+    margin-top: 36%;
+    z-index: 11;
+    transition: all 1s;
+    color: rgb(255, 0, 0);
+    animation: fadeIn 1.5s ease forwards;
+    border-right: 8px solid rgb(255, 0, 0);
+    padding: 50px;
+    text-shadow: 0 10px 30px ;
+    cursor: pointer;
+    background-color: transparent;
+    overflow: hidden;
+    font-family: CeraLight;
+    &:hover {
+        color: white;
+    }
+}
+
+.cuttingp span {
+    font-size: 3rem;
+    font-weight: 1;
+}
+
+.cuttingp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 8px;
+    background-color: rgb(255, 0, 0);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.cutting-container {
+    padding: 0 150px;
+    margin: 0 auto;
+    margin: 100px 0;
+    height: 100vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.guillotine-svg {
+    background-image: url(../images/guilottine.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 500px;
+    height:250px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+}
+
+.guillotine-svg p {
+    color: rgb(255, 0, 0);
+    text-shadow: 0 10px 30px rgb(255, 0, 0);
+    font-size: 1rem;
+    position: absolute;
+    font-family: CeraProBold;
+}
+
+.cutting-guillotine-max ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.m4 {
+    top: 5%;
+}
+.m3 {
+    right: 0%;
+    top: 50%;
+    rotate: 90deg;
+}
+
+.guillotine-title1 {
+    border-bottom: 2px solid rgb(62, 61, 61);
+    font-family: CeraProBold;
+    text-shadow: 0 10px 30px rgba(255, 255, 255, 0.227);
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.cutting-guillotine-max {
+    display: flex;
+    padding: 50px;
+    border-radius: 50px;
+    flex-direction: column;
+    gap: 50px;
+    background-color: rgb(6, 0, 0);
+    margin-top: 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.cutting-guillotine-title h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 0 10px 30px rgba(255, 238, 238, 0.412);
+}
+
+.cutting-guillotine-items {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 50px;
+    padding-bottom: 80px;
+}
+
+.cutting-guillotine-items h1 {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 10px 30px red;
+    position: absolute;
+    bottom: 0;
+    font-family: CeraProBold;
+    font-size: 1.3rem;
+}
+
+.cutting-main-title {
+    margin-bottom: 20px;
+    font-family: CeraProBold;
+    text-shadow: 0 10px 30px rgba(255, 0, 0, 0.416);
+    text-align: center;
+}
+
+.cutting-main-title h1 {
+    font-size: 2.5rem;
+}
+
+.cutting-guillotine p {
+    text-align: center;
+    font-family: CeraLight;
+    font-size: 1.1rem;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.cutting-guillotine-max-title {
+    font-size: 2rem;
+    text-shadow: 0 10px 30px rgba(255, 255, 255, 0.227);
+    font-family: CeraProBold;
+    border-bottom: 2px solid rgb(62, 61, 61);
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.cutting-guillotine-item-image {
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.181);
+}
+
+.cutting-guillotine-item-image.s {
+    background-image: url(../images/stainlessicon.png);
+}
+.cutting-guillotine-item-image.u {
+    background-image: url(../images/steel2icon.png);
+}
+
+.cutting-guillotine-item-image.o {
+    background-image: url(../images/tsinkicon.png);
+}
+
+.cutting-guillotine-item-image.a {
+    background-image: url(../images/aluminiumicon.png);
+}
+
+.cutting-guillotine-item-image.m {
+    background-image: url(../images/steelicon.png);
+}
+
+.cutting-guillotine-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 1rem;
+    font-family: CeraLight;
+    font-weight: 1;
+    text-align: center;
+
+}
+
+.cutting-guillotine-item p span{
+    color: red;
+    font-size: .9rem;
+    text-align: center;
+    text-shadow: 0 10px 30px;
+}
+
+.coordinate-container {
+    background: rgb(8, 8, 8);
+    margin-top: 50px;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    border-radius: 50px;
+}
+
+.coordinate-maintitle {
+    text-align: center;
+}
+
+.coordinate-maintitle h1 {
+    font-family: CeraProBold;
+    margin-bottom: 50px;
+}
+
+.coordinate-maintitle p {
+    font-family: CeraLight;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.coordinate-max {
+    font-size: 2rem;
+    text-shadow: 0 10px 30px rgba(255, 255, 255, 0.227);
+    font-family: CeraProBold;
+    border-bottom: 2px solid rgb(62, 61, 61);
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.coordinate-container.p {
+    background-color: rgb(6, 0, 0);
+}
+
+.cutting-guillotine-item.c1 {
+    flex-direction: column;
+    width: 20%;
+}
+.cutting-guillotine-items.c {
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cutting-guillotine-item.c1 p small {
+    color: rgb(186, 186, 186);
+}
+
+.cutting-guillotine-item-image.c1 {
+    background-image: url(../images/steel2icon.png);
+}
+
+.cutting-guillotine-item-image.c2 {
+    background-image: url(../images/stainlessicon.png);
+}
+
+.cutting-guillotine-item-image.co1 {
+    background-image: url(../images/profilec.png);
+}
+
+.cutting-guillotine-item-image.co2 {
+    background-image: url(../images/profilez.png);
+}
+
+.cutting-guillotine-item-image.co3 {
+    background-image: url(../images/profilej.png);
+}
+
+.coordinate-maintitle {
+    text-shadow: 0 10px 30px rgba(255, 0, 0, 0.416);
+    font-family: CeraProBold;
+}
+
+@media (max-width:768px) {
+    .cutting-container {
+        width: 95%;
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .cutting-guillotine p {
+        max-width: 85%;
+        font-size: 1rem;
+    }
+
+    .cutting-guillotine-max {
+        max-width: 100%;
+    }
+
+    .guillotine-svg {
+        width: 400px;
+    }
+
+    .m3 {
+        top: 43%;
+    }
+
+    .coordinate-maintitle p {
+        max-width: 85%;
+    }
+
+    .cutting-guillotine-items.c {
+        flex-direction: column;
+    }
+
+    .cutting-guillotine-item.c1 {
+        width: 85%;
+    }
+
+    .cutting-main-title h1 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,255 @@
+.thermal-main-image {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/thermalmainimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(50%);
+}
+
+.thermalp {
+    position: absolute;
+    font-size: 4rem;
+    left: 0%;
+    text-align: center;
+    gap: 10px;
+    top: 0;
+    margin-top: 36%;
+    z-index: 11;
+    transition: all 1s;
+    color: rgb(255, 0, 0);
+    animation: fadeIn 1.5s ease forwards;
+    border-left: 8px solid rgb(255, 0, 0);
+    padding: 50px;
+    text-shadow: 0 10px 30px ;
+    cursor: pointer;
+    background-color: transparent;
+    overflow: hidden;
+    font-family: CeraLight;
+    &:hover {
+        color: white;
+    }
+}
+
+.thermalp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0px;
+    background-color: rgb(255, 0, 0);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.thermalp span {
+    color: white;
+}
+
+.thermalp:hover::before {
+    width: 100%;
+    z-index: -1;
+    color: white;
+}
+
+.thermal-control {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: rgb(9, 0, 0);
+    height: 100%;
+    margin: 100px 100px;
+    padding: 50px 50px;
+    border-radius: 50px;
+}
+
+.thermal-control h1 {
+    font-family: CeraProBold;
+    font-size: 2.5rem;
+    width: 70%;
+    text-shadow: 0 10px 30px rgba(255, 0, 0, 0.465);
+}
+
+.thermal-control p {
+    width: 70%;
+    font-family: CeraLight;
+    font-weight: lighter;
+}
+
+.thermal-control ul {
+    width: 70%;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+}
+
+.thermal-control ul li {
+    cursor: default;
+}
+
+.thermal-control li {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    text-shadow: 0 10px 30px;
+    font-family: CeraLight;
+}
+
+.thermal-control li svg {
+    color: rgb(255, 5, 5);
+    font-size: 1.5rem;
+}
+
+.thermal-control-extension {
+    background-color: rgb(11, 11, 11);
+    font-size: 3rem;
+    text-align: center;
+    padding: 100px;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.46);
+    margin-bottom: 100px;
+
+}
+
+.thermal-control-extension2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    gap: 25px;
+    background-color: rgb(9, 0, 0);
+    height: 100%;
+    margin: 100px 100px;
+    padding: 50px 50px;
+    border-radius: 50px;
+}
+
+.thermal-control-extension2 ul {
+    width: 70%;
+    display: flex;
+    padding: 0;
+    flex-direction: column-reverse;
+}
+
+.thermal-control-extension2 ul li {
+    cursor: default;
+}
+
+.thermal-control-extension2 li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    text-shadow: 0 10px 30px;
+    font-family: CeraLight;
+}
+
+.thermal-control-extension2 li svg {
+    color: rgb(255, 5, 5);
+    font-size: 1.5rem;
+}
+
+.thermal-control-extension2 h1 {
+    font-family: CeraProBold;
+    font-size: 2.5rem;
+    text-shadow: 0 10px 30px rgba(255, 0, 0, 0.465);
+}
+
+.thermal-control-extension2 p {
+    font-family: CeraLight;
+    font-weight: lighter;
+}
+
+@media (max-width:768px) {
+    .thermalp::before {
+        display: contents;
+    }
+
+    .thermal-main-image {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .thermalp {
+        border: 5px solid red;
+        padding: 15px 0;
+        width: 100%;
+        font-size: 3.25rem;
+        margin-top: 85%;
+        border-left: 0;
+        border-right: 0;
+        backdrop-filter: blur(10px);
+    }
+
+    .thermal-control {
+        margin: 50px 0;
+        height: 100%;
+        width: 95%;
+        text-align: center;
+        align-items: center;
+        padding: 50px 10px;
+    }
+    .thermal-control p {
+        width: 100%;
+    }
+
+    .thermal-control h1 {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+    .thermal-control ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+    }
+
+    .thermal-control ul li {
+        text-align: left;
+    }
+
+    .thermal-control ul li svg {
+        font-size: 1.5rem;
+    }
+
+    .thermal-control-extension {
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+
+    .thermal-control p {
+        width: 100%;
+    }
+
+    .thermal-control-extension2 h1 {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+    .thermal-control-extension2 ul {
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+    }
+
+    .thermal-control-extension2 {
+        margin: 50px 0;
+        height: 100%;
+        width: 95%;
+        text-align: center;
+        align-items: center;
+        padding: 50px 10px;
+    }
+}

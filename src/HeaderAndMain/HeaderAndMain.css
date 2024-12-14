@@ -6,14 +6,15 @@
 
 li {
     list-style-type: none;
-    font-size: 18px;
+    font-size: 1rem;
     cursor: pointer;
     height: 100%;
     transition: all .3s;
-    font-family: Cera;
+    font-family: CeraLight;
     font-weight: 1;
     padding: 28px 0 0 0;
     z-index: 9999;
+    text-shadow: 0 4px 8px rgba(255, 255, 255, .5);
 }
 
 li:hover {
@@ -21,6 +22,7 @@ li:hover {
     color: rgb(218, 217, 217);
     transition: opacity .3s all .3s;
 }
+  
 
 ul {
     display: flex;
@@ -28,7 +30,6 @@ ul {
     flex-direction: row;
     padding: 0 80px;
     width: 106vw;
-
 }
 
 .header {
@@ -42,16 +43,17 @@ ul {
     font-family: Fank;
     padding-top: 16px;
     letter-spacing: 2px;
-    text-shadow: 0 0 0;
+    border-top:5px solid red;
+    border-radius: 50%;
+    text-shadow: 0 10px 30px rgba(255, 0, 0, .3);
     &:hover {
         opacity: 1;
-        transform: scale(1.02);
-        transform: translateY(-1px);
-        color: rgb(209, 208, 208);
+        transform: scale(1.01);
         transition: all .3s ease-out;
-        border-bottom: none;
+
     }
 }
+
 
 :any-link {
     text-decoration: none;
@@ -75,29 +77,69 @@ ul {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    z-index: 0;
+    z-index: 2;
     
 }
 
 .imagep {
     position: absolute;
-    font-size: 60px;
+    font-size: 4rem;
     left: 4%;
-    margin-top: 35%;
+    margin-top: 33%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: left;
-    width: 40%;
+    width: 45%;
     gap: 10px;
-    z-index: 1;
-    transition: all .7s;
+    z-index: 3;
+    transition: all 1s;
     animation: fadeIn 1.5s ease forwards;
-    border-left: 10px solid red;
-    &:hover {
-        opacity: .7;
-        border-left: 15px solid red;
+    border-left: 8px solid red;
+    padding: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+
+.imagep::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 8px;
+    background-color: red;
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.imagep:hover::before {
+    width: 100%;
+    z-index: -1;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
     }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.arrow {
+    font-size: 6rem;
+    rotate: 90deg;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    display: flex;
 }
 
 .menuall {
@@ -121,53 +163,33 @@ ul {
     }
 }
 
-.scrolltotop {
-    position: fixed;
-    color: white;
-    cursor: pointer;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 60px;
-    bottom: 5%;
-    right: 5%;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.scrolltotop.visible {
-    opacity: 0.5;
-    transform: translateY(0);
-}
-
-.scrolltotop:hover {
-    opacity: 0.8;
-}
-
-
 .header ul li select {
     font-family: Cera;
     font-size: 18px;
     border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
+    padding: 5px;
+    top: 27%;
     color: white;
     border: none;
     position: absolute;
-    right: 7%;
-    margin-top: 0px;
+    right: 6.7%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    text-align: center;
     outline: none;
 
 }
 
 .header ul li option {
-    color: black;
+    color: rgb(255, 255, 255);
+    background-color: rgba(34, 34, 34, 1);
+    border: 0;
+
+    &:active {
+        border: 0;
+    }
 }
 
 
@@ -191,9 +213,18 @@ ul {
         text-align: center;
         border-left: 0;
         padding: 11px;
+        border-left: none;
 
     }
     
+    .arrow {
+        display: none;
+    }
+
+    .imagep::before {
+        display: none;
+    }
+
     .red1 {
         height: 150px;
         width:5px;
@@ -236,6 +267,7 @@ ul {
 
     .header ul {
         position: fixed;
+        width: 100%;
     }
     
     .menuall svg {
@@ -276,9 +308,9 @@ ul {
         position: fixed;
         display: flex;
         height: 100%;
-        background-color: rgba(29, 29, 29, .95);
+        background-color: rgba(14, 13, 13, 0.99);
         color: white;
-        z-index: 9;
+        z-index: 54;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -312,6 +344,10 @@ ul {
         background-attachment: scroll;
     }
 
+    .scrolltotop {
+        position: fixed;
+        font-size: 50px;
+    }
 
     .red1 {
         height: 120px;
@@ -340,8 +376,9 @@ ul {
         border-radius: 20px;
         z-index: 555;
         top: 0;
+        background-color: rgb(61, 61, 61);
         margin-top: 20%;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         font-family: Cera;
         font-size: 18px;
         padding: 5px 15px;
@@ -350,7 +387,7 @@ ul {
       }
 
       .fullscreen-menu select option {
-        color: black;
+        color: rgb(255, 255, 255);
       }
 
 }

@@ -1,106 +1,155 @@
-.gallery-container {
-    display: grid;
-    grid-auto-flow: dense;
-    grid-template-columns: repeat(auto-fill, minmax(525px, 1fr));
-    gap: 10px;
-    padding: 150px;
+.slider-container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.slider-title {
+  display: flex;
+  border-radius: 5px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  font-size: 50px;
+  text-shadow: 0 10px 30px red;
+  padding-bottom: 15px;
+  border-bottom: 5px solid rgba(255, 255, 255,.05);
+  text-align: center;
+}
+
+.slick-slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  transition: transform 0.3s ease-out;
+  width: 100%;
+}
+
+.slick-prev, .slick-next {
+  color:white;
+  background-color: transparent;
+  border-radius: 20px;
+  height: 50px;
+  width: 50px;
+  transition: all .5s;
+
+}
+
+
+.slick-prev::before {
+  content: '←';
+  font-family: CeraLight;
+  font-size: 50px;
+  border-radius: 10px;
+}
+
+.slick-next::before {
+  content: '→';
+  font-family: CeraLight;
+  font-size: 50px;
+  border-radius: 10px;
+}
+
+.slick-next:hover, .slick-prev:hover {
+  background-color: rgb(255, 0, 0);
+  box-shadow: 0 10px 30px rgba(100, 100, 100,.5);
+}
+
+.slick-slide {
+  display: inline-block;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  margin: 0 10px;
+  transition: all .3s;
+}
+
+.slick-list {
+  width: 90%;
+  height: 100%;
+  box-shadow: 0 10px 30px rgba(51, 11, 11, 0.5);
+}
+
+.slide-image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  border-radius: 15px;
+}
+
+.slick-slide:hover {
+  transform: scale(1.01);
+  z-index: 1;
+}
+
+.slick-prev {
+  left: 20px;
+}
+
+.slick-next {
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  .slick-prev::before, .slick-next::before {
+    font-size: 1.5rem;
+    padding: 8px 15px;
+  }
+  .slider-title {
+    font-size: 40px;
     width: 100%;
-    box-sizing: border-box;
   }
 
-  .gallery-item {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  .slider-container {
     width: 100%;
-    aspect-ratio: 1;
-    cursor: pointer;
-    border-radius: 25px;
-    transition: transform 0.3s ease-in-out;
-
-  }
-  
-  .gallery-item:hover {
-    transform: scale(1.01);
-    transform: translateY(-5px);
   }
 
-  .gallery-item img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.2s ease-in-out;
+  .slide-image {
+    width: 87%;
+    height: 80vh;
+  }
+
+  .slick-slide {
+    margin: 0;
+  }
+
+  .slick-prev {
+    left: -65px;
   }
   
-  .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10000;
-    transition: .3s all;
+  .slick-next {
+    right: 48px;
   }
-  
-  .modal-content {
-    position: relative;
-    max-width: 100%;
-    max-height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .modal-content img {
-    width: 100%;
-    height: 90vh;
+
+  .slick-prev::before {
+    content: '←';
+    font-family: CeraLight;
+    font-size: 55px;
     border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
   
-  .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px; 
-    background: #ffffff;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 25px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: .3s all;
-  }
-  
-  .close-button:hover {
-    background: #f00;
-    color: #fff;
+  .slick-next::before {
+    content: '→';
+    font-family: CeraLight;
+    font-size: 55px;
+    border-radius: 10px;
   }
 
-  @media (max-width:768px) {
-    .gallery-container {
-        padding: 100px 10px;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    }
-    .modal-content img {
-        width: 450px;
-        height: 300px;
-        border-radius: 10px;
-        display: flex;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-
-      .modal {
-        display: none;
-      }
+  .slick-list {
+    margin-right: 50px;
+    width: 100%;
+    box-shadow: none;
   }
+}

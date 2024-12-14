@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './AboutThird.css';
-import bgImage1 from '../images/image1.jpg';
-import bgImage2 from '../images/image2.jpg';
-import bgImage3 from '../images/image3.jpg';
+import bgImage1 from '../images/aboutimage5.jpg';
+import bgImage2 from '../images/aboutimage6.jpg';
+import bgImage3 from '../images/aboutimage7.jpg';
 import bgImage4 from '../images/image4.jpg';
 import { useTranslation } from 'react-i18next';
 
@@ -12,7 +12,7 @@ export default function AboutThird() {
 
   return (
     <div className="aboutthird-container">
-      {/* Заголовок */}
+
       <motion.div
         className="aboutthird-header"
         initial={{ opacity: 0, x: -50 }}
@@ -23,7 +23,6 @@ export default function AboutThird() {
         <h1>{t("ourValues")}</h1>
       </motion.div>
 
-      {/* Контентные карточки */}
       <div className="aboutthird-content">
         <motion.div
           className="aboutthird-card"

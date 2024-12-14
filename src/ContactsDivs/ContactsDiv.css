@@ -27,12 +27,15 @@
 .contacts-left h1 {
     font-family: CeraLight;
     margin-bottom: 10px;
+    font-size: 2rem;
+    text-shadow: 0 10px 30px rgba(255, 255, 255, .2);
 }
 
 .contacts-left p {
     font-family: CeraLight;
     font-size: 25px;
     margin-bottom: 50px;
+    font-size: 1.3rem;
 }
 
 .contacts-left p span {
@@ -74,6 +77,8 @@
 .map h1 {
     font-family: CeraLight;
     font-weight: 1;
+    text-shadow: 0 10px 30px rgba(255, 0, 0, .5);
+    font-size: 2.5rem;
 }
 
 .map h1 span {
@@ -84,6 +89,7 @@
     font-family: CeraLight;
     margin-bottom: 25px;
     text-align: right;
+    text-shadow: 0 10px 30px rgba(255, 255, 255, .2);
 }
 
 .contacts-right svg {
@@ -91,6 +97,11 @@
     background: linear-gradient(rgb(255, 0, 0),rgb(0, 0, 0));
     border-radius: 100%;
     padding: 2px;
+}
+
+iframe {
+    border-radius: 20px;
+    border: 5px solid rgb(65, 65, 65);
 }
 
 @media (max-width:768px) {

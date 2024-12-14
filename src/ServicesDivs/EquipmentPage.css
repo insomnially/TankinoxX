@@ -1,0 +1,271 @@
+.equipment-main-image {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/equipmentimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(50%);
+}
+
+.equipmentp {
+    position: absolute;
+    font-size: 4rem;
+    right: 0%;
+    text-align: center;
+    gap: 10px;
+    top: 0;
+    margin-top: 36%;
+    z-index: 11;
+    transition: all 1s;
+    color: rgb(255, 0, 0);
+    animation: fadeIn 1.5s ease forwards;
+    border-right: 8px solid rgb(255, 0, 0);
+    padding: 50px;
+    text-shadow: 0 10px 30px ;
+    cursor: pointer;
+    background-color: transparent;
+    overflow: hidden;
+    font-family: CeraLight;
+    &:hover {
+        color: white;
+    }
+}
+
+.equipment-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    width: 70%;
+    font-family: CeraProBold;
+    text-shadow: 0 10px 30px rgba(255, 0, 0, 0.5) ;
+    padding: 0 300px;
+}
+
+.equipment-title h1 {
+    font-size: 3rem;
+}
+
+.equipment-title span {
+    color: red;
+}
+
+.equipment-container {
+    padding: 0px;
+    margin: 100px 0;
+}
+
+.equipmentp span {
+    font-size: 3rem;
+    font-weight: 1;
+    color: white;
+}
+
+.equipmentp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 8px;
+    background-color: rgb(255, 0, 0);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.equipmentp:hover::before {
+    width: 100%;
+    z-index: -1;
+    color: white;
+}
+
+.equipment-cards {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 50px;
+    padding: 0 300px;
+}
+
+.equipment-card {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.equipment-card.c2 {
+    background-color: rgb(61, 2, 2);
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+    border-top-right-radius: 100px ;
+    border-top-left-radius: 100px ;
+}
+
+.equipment-info {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #181818;
+    box-shadow: 0 10px 30px rgba(133, 131, 131, 0.1);
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .equipment-info h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-family: CeraProBold;
+    text-shadow: 0 10px 30px rgba(255, 0, 0, 0.502);
+    margin-bottom: 15px;
+  }
+  
+  .equipment-info p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    font-family: CeraLight;
+    font-weight: 1;
+    max-width: 800px;
+    color: #ffffff;
+  }
+  
+
+.equipment-card.c1 {
+    background: rgba(0, 0, 0, 0.111);
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    border-top-left-radius: 100px ;
+    border-top-right-radius: 100px ;
+
+}
+
+.equipment-card-description {
+    width: 50%;
+    padding: 50px;
+    text-align: center;
+}
+
+.equipment-card-description h1 {
+    font-family: CeraProBold;
+    border-bottom: 5px solid gray;
+    color: rgb(255, 255, 255);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-shadow: 0 10px 30px;
+}
+
+.equipment-card-description p {
+    font-family: CeraLight;
+    font-weight: 1;
+}
+
+.buttonwrap1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.equipment-card-description span {
+    color: red;
+}
+
+.equipment-card-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(75%);
+    height: 600px;
+    width: 50%;
+}
+
+.equipment-card-image.c1 {
+    background-image: url(../images/equipmentimage1.jpg);
+    border-top-left-radius: 100px ;
+}
+
+.equipment-card-image.c2 {
+    background-image: url(../images/equipment2.jpg);
+    border-top-right-radius: 100px ;
+}
+
+@media (max-width:768px) {
+    .equipmentp::before {
+        display: contents;
+    }
+
+    .equipment-main-image {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .equipmentp {
+        border: 5px solid red;
+        padding: 15px 0;
+        width: 100%;
+        font-size: 3.25rem;
+        margin-top: 85%;
+        border-left: 0;
+        border-right: 0;
+        backdrop-filter: blur(10px);
+    }
+
+    .equipment-cards {
+        padding: 0 15px;
+        width: 95%;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .equipment-title {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .equipment-title h1 {
+        font-size: 2rem;
+    }
+
+    .equipment-card.c1 {
+        flex-direction: column;
+        border-radius: 0;
+        border-top-left-radius: 100px;
+    }
+
+    .equipment-card.c2 {
+        flex-direction: column;
+        border-radius: 0;
+        border-top-right-radius: 100px;
+    }
+
+
+
+    .equipment-card-description {
+        width: 95%;
+    }
+    .equipment-card-image {
+        width: 100%;
+        background-attachment: scroll;
+        border-radius: 0;
+    }
+
+    .equipment-card-description {
+        padding: 25px;
+        text-align: center;
+    }
+}

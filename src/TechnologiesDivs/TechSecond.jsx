@@ -9,7 +9,7 @@ export default function TechSecond() {
   const { t } = useTranslation();
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.2,
   });
 
   const lineVariants = {

@@ -27,25 +27,7 @@
     align-items: center;
     flex-direction: column;
     height: 100vh;
-}
-
-.span1 {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    left: 2%;
-    width: 5px;
-    border-radius: 5px;
-    height: 186px;
-    background-color: red;
-}
-.span2 {
-    position: absolute;
-    width: 5px;
-    border-radius: 5px;
-    height: 253px;
-    background-color: red;
-    margin-left: -34px;
+    position: relative;
 }
 
 .second-left-bottom {
@@ -53,10 +35,14 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-left: 70px;
+    padding: 15px;
+
 }
 .second-left-bottom p {
     font-size: 25px;
-    margin-left: 70px;
+    padding: 15px;
+    border-left: 5px solid red;
 
 }
 
@@ -65,11 +51,43 @@
     width: 100%;
 }
 
+.buttontechnologies1 {
+    font-size: 20px;
+    background-color: rgb(255, 5, 5);
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 15px;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10%;
+    left: 0;
+    margin-left: 5%;
+    &:hover {
+        svg {
+            transition: all .5s ease-out;
+            rotate: -90deg;
+        }
+    }
+  }
+
+  .buttontechnologies1 a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-direction: row;
+    align-self: center;
+  }
+
+
+
 .second-left-bottom-2 {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     margin-left: 102px;
+    border-left: 5px solid red;
+    padding: 15px;
 }
 
 .second-left-bottom-2 h1 {
@@ -78,16 +96,22 @@
 
 .second-left-bottom-2 p {
     margin: 0;
+    border-left: 0;
+    padding: 0;
 }
 
 .second-right {
-    background-image: url(../images/innovativetechnology.png);
+    background-image: url(../images/innovationimage11.png);
     background-position: center;
-    background-size: 80%;
+    background-size: 100%;
     background-repeat: no-repeat;
     width: 45%;
-    height: 90vh;
+    height: 100vh;
 }
+
+.buttontechnologies1 svg {
+    transition: all .5s ease;
+  }
 
 @media (max-width:768px) {
     .h1second-main {
@@ -100,14 +124,16 @@
     .second-content {
         margin: 0;
         display: flex;
-        width: 100%;
+        width: 90%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 25px;
+        padding-top: 50px;
     }
     .second-container {
         width: 100%;
-        height: 108.5vh;
+        height: 100%;
     }
 
     .second-left {
@@ -116,33 +142,44 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 65vh;
+        height: 100%;
     }
 
     .second-left-bottom p{
-        font-size: 15px;
+        font-size: 18px;
         width: 100%;
         margin: 0;
         text-align: center;
-        padding-top: 50px;
+        padding: 0;
+        margin-top: 15px;
+        border: 0;
+
+    
     }
     .second-right {
+        background-position: center;
+        background-size: cover;
         width: 100%;
-        height: 400px;
+        height: 55vh;
+        background-size: 130%;
+        margin-left: 30px;
+        margin-top: 50px;
     }
 
     .span1 {
         left: 4%;
         margin-bottom: 120px;
         height: 150px;
+        display: contents;
     }
     .span2 {
-        right: 4%;
-        margin-top: 40px;
-        height: 150px;
+        display: contents;
     }
     .second-left-bottom-2{
         margin: 0;
+        border: 0;
+        padding: 0;
+        margin-bottom: 15px;
     }
     .second-left-bottom-2 p{
         text-align: center;
@@ -153,8 +190,23 @@
         padding-top: 50px;
     }
 
+    .buttontechnologies1 {
+        margin: 0 auto;
+        position: relative;
+        font-size: 15px;
+        padding: 9px;
+        border-radius: 10px;
+    }
+
+    .buttontechnologies1 svg {
+        transition: all .5s ease;
+      }
+
     .second-left-bottom {
         display: flex;
         flex-direction: column;
+        margin: 25px 0 0;
+        padding: 15px;
+        border-left: 5px solid red;
     }
 }

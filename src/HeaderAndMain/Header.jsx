@@ -5,6 +5,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Preloader from '../MainDivs/Preloader';
+import { useInView } from 'react-intersection-observer';
 
 export default function Header() {
   const { t, i18n } = useTranslation();
@@ -20,6 +21,8 @@ export default function Header() {
     });
   };
 
+  
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -27,7 +30,7 @@ export default function Header() {
   return (
     <div>
       {isLoading && <Preloader />}
-      <div className="header">
+      <div className='header'>
         <ul>
           <li><Link to="/TankinoxX/about">{t('about')}</Link></li>
           <li><Link to="/TankinoxX/technologies">{t('technologies')}</Link></li>
@@ -55,6 +58,9 @@ export default function Header() {
           </div>
         </ul>
       </div>
+      <div>
+</div>
+
       <div className={`fullscreen-menu ${menuOpen ? 'open' : ''}`}>
         <ul>
           <li><Link to="/TankinoxX/about">{t('about')}</Link></li>

@@ -23,8 +23,11 @@
 
   .techfirst-content h1 {
     font-family: CeraLight;
-    font-weight: 600;
-    width: 70%;
+    font-weight: 1;
+    font-size: 2.2rem;
+    text-shadow: 0 10px 30px rgba(255, 0, 0, .5);
+
+
   }
   
   .techfirst-card {
@@ -44,14 +47,16 @@
     width: 800px;
     height: 700px;
     z-index: -1;
-    background-size: 130%;
+    background-size: 150%;
     background-position: center;
     background-repeat: no-repeat;
   }
   
   .techfirst-description h1 {
     padding-bottom: 15px;
-    font-size: 48px;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 100%;
     font-family: CeraLight;
     font-weight: 1;
     border-bottom: 5px solid red;
@@ -61,9 +66,9 @@
   .techfirst-description p {
     font-family: CeraLight;
     font-weight: 1;
-    font-size: 25px;
-    text-align: left;
-    width: 95%;
+    font-size: 1.25rem;
+    text-align: center;
+    width: 100%;
   }
 
   .techfirst-description {
@@ -79,15 +84,15 @@
   @media (max-width: 768px) {
     .techfirst-container {
       margin-top: 60px;
-      padding: 10px;
+      padding: 0;
     }
   
     .techfirst-content {
-      padding: 0 20px;
+      padding: 0 15px;
     }
   
     .techfirst-content h1 {
-      font-size: 30px;
+      font-size: 1.5rem;
       text-align: center;
       margin-bottom: 15px;
       margin-top: 50px;
@@ -102,7 +107,8 @@
   
     .techfirst-image {
       width: 100%;
-      background-size: cover;
+      height: 50vh;
+      background-size: 200%;
     }
   
     .techfirst-description h1 {

@@ -32,8 +32,8 @@ export default function CareersDiv() {
         animate={imageInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        <h1>{t('careers1.vacancies')}</h1>
-        <p>{t('careers1.internships')}</p>
+       {t('careers1.vacancies')}<br/>
+       <p>{t('careers1.internships')}</p>
       </motion.div>
 
       <motion.div

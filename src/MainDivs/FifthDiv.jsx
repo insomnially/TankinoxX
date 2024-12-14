@@ -4,6 +4,9 @@ import { Pagination, Autoplay } from "swiper/modules";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { FaArrowRightLong } from 'react-icons/fa6';
+import "swiper/swiper-bundle.css"
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -21,28 +24,25 @@ export default function FifthDiv() {
     { id: 5, text: t("stamping") },
   ];
 
-  const { ref: headerRef, inView: headerInView } = useInView({
+  const { ref, inView } = useInView({
     threshold: 0.2,
-  });
-
-  const { ref: textRef, inView: textInView } = useInView({
-    threshold: 0.2,
+    triggerOnce: true,
   });
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container" ref={ref}>
       <motion.h1
-        ref={headerRef}
         initial={{ opacity: 0, y: 50 }}
-        animate={headerInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 1 }}
+        animate={inView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 1, delay: 0.5 }}
       >
         {t("tankinoxProviding")} <span>{t("services")}</span>
       </motion.h1>
+      
       <Swiper
         modules={[Pagination, Autoplay]}
-        spaceBetween={100}
-        slidesPerView={3}
+        spaceBetween={30}
+        slidesPerView={4}
         loop={true}
         autoplay={{
           delay: 2000,
@@ -53,34 +53,90 @@ export default function FifthDiv() {
           el: ".custom-pagination",
         }}
         className="carousel"
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 30
+          },
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 30
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 100,
+          },
+        }}
       >
         {rectangles.map((rect) => (
           <SwiperSlide key={rect.id}>
             <motion.div
+              animate={inView ? { opacity: 1, y: 0 } : {}}
               className="rectangle"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1 }}
+              initial={{ opacity: 0, y: -50 }}
+              transition={{ duration: 1, delay: 1 }}
             >
               {rect.text}
             </motion.div>
           </SwiperSlide>
         ))}
       </Swiper>
+
       <div className="custom-pagination"></div>
+      
       <motion.div
-        ref={textRef}
+        className="buttonfifth"
+        initial={{ opacity: 0, x: -20 }}
+        animate={inView ? { opacity: 1, x: 0 } : {}}
+        transition={{ duration: 0.8, delay: 1.5 }}
+      >
+        <Link to="/TankinoxX/services">
+          {t("moreservices")} <FaArrowRightLong />
+        </Link>
+      </motion.div>
+
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
-        animate={textInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 1, delay: 0.5 }}
+        animate={inView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 1, delay: 2 }}
         className="p-carousel"
       >
-        <p className="pc1">
-          {t("clientApproach")}
-        </p>
-        <p className="pc2">
-          {t("costFunctionalityRatio")}
-        </p>
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 1, delay: 1 }}
+        >
+          {t('tankinox.main')}
+          <span>{t('tankinox.span')}</span>
+        </motion.h1>
+
+        <div className="pccont">
+          <motion.p
+            className="pc1"
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 1, delay: 1.2 }}
+          >
+            {t("clientApproach")}
+          </motion.p>
+          
+          <motion.p
+            className="pc2"
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 1, delay: 1.4 }}
+          >
+            {t("costFunctionalityRatio")}
+          </motion.p>
+        </div>
       </motion.div>
     </div>
   );

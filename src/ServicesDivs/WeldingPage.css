@@ -1,0 +1,551 @@
+.welding-main-image {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/weldingmainimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(50%);
+}
+
+.weldingp {
+    position: absolute;
+    font-size: 4rem;
+    left: 0%;
+    text-align: center;
+    gap: 10px;
+    top: 0;
+    margin-top: 40%;
+    z-index: 11;
+    transition: all 1s;
+    color: rgb(255, 255, 255);
+    animation: fadeIn 1.5s ease forwards;
+    border-left: 8px solid rgb(255, 0, 0);
+    padding: 50px;
+    text-shadow: 0 10px 30px ;
+    cursor: pointer;
+    background-color: transparent;
+    overflow: hidden;
+    font-family: CeraLight;
+    &:hover {
+        color: white;
+    }
+}
+
+.weldingp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0px;
+    background-color: rgb(255, 0, 0);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.weldingp span {
+    color: white;
+}
+
+.weldingp:hover::before {
+    width: 100%;
+    z-index: -1;
+    color: white;
+}
+
+.welding-container {
+    padding: 0 150px;
+    margin: 0 auto;
+    margin: 100px 0;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.welding-main-title {
+    text-align: center;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.welding-main-title h1 {
+    font-family: CeraProBold;
+    font-size: 2.5rem;
+    text-shadow: 0 10px 30px rgba(255, 0, 0, 0.498);
+}
+
+.welding-main-title p {
+    font-size: 1.25rem;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.welding-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.welding-title1 {
+    font-size: 1.5rem;
+    text-shadow: 0 10px 30px rgba(255, 255, 255, 0.478);
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    max-width: 50%;
+    padding: 5px;
+    border-bottom: 2px solid rgb(50, 50, 50);
+}
+
+.welding-start-container {
+    background: #0e0e0e;
+    padding: 50px;
+    border-radius: 15px;
+    border: 5px solid rgb(39, 39, 39);
+}
+
+.welding-item-image, .welding-item-image2 {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 100%;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.181);
+    background-position: center;
+    background-size: cover;
+}
+
+.welding-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.welding-item-image.s2 {
+    background-image: url(../images/stainlessicon.png);
+}
+
+.welding-item-image.s1 {
+    background-image: url(../images/steel2icon.png);
+}
+
+.welding-item-image.s4 {
+    background-image: url(../images/chuguicon.png);
+}
+.welding-item-image.s3 {
+    background-image: url(../images/steelicon.png);
+}
+
+
+.welding-border {
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(24, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    background-attachment: fixed;
+    font-family: CeraProBold;
+    text-shadow: 0 10px 30px rgba(255, 255, 255, 0.587);
+}
+
+.welding-tig-container {
+    padding: 0 150px;
+    margin: 0 auto;
+    margin: 100px 0;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.welding-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: CeraProBold;
+    text-shadow: 0 10px 30px rgba(255, 255, 255, 0.426);
+}
+
+.welding-title p {
+    font-size: 1.25rem;
+}
+
+.welding-item2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.welding-items2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.welding-item-image2.t1 {
+    background-image: url(../images/weldingpaget1.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+}
+
+
+.welding-item-image2.t2 {
+    background-image: url(../images/weldingpaget2.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+}
+
+
+.welding-item-image2.t3 {
+    background-image: url(../images/weldingpaget3.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+}
+
+.welding-border.c1 h1 {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 0 10px 30px rgba(255, 0, 0, 0.657);
+}
+
+.welding-border.c1 {
+    background: rgb(22, 22, 22);
+}
+
+.welding-mig-container {
+    padding: 0 150px;
+    margin: 0 auto;
+    margin: 100px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.welding-plasma-container {
+    padding: 0 150px;
+    margin: 0 auto;
+    margin: 100px 0;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.welding-start1-container {
+    background: #0e0000;
+    padding: 50px;
+    border-radius: 15px;
+    border: 5px solid rgb(39, 39, 39);
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.welding-mig-title h1 {
+    margin-bottom: 50px;
+    text-shadow: 0 10px 30px rgb(255, 255, 255,.5);
+}
+
+.welding-mig-title p {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.welding-items3-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.welding-items3-left {
+ 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 50px;
+}
+
+.welding-items3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welding-item3 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.welding-item-image2.m1 {
+    background-image: url(../images/itemsave.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.welding-item-image2.m2 {
+    background-image: url(../images/itemweldingdiff.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.welding-item-image2.m3 {
+    background-image: url(../images/itemquality.png);
+    rotate: 360deg;
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.welding-item-image2.m4 {
+    background-image: url(../images/itemwelding.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.welding-plasma-container {
+    padding: 0 150px;
+    margin: 0 auto;
+    margin: 100px 0;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.welding-plasma-start-container {
+    background: #0c0c0c;
+    padding: 50px;
+    border-radius: 15px;
+    border: 5px solid rgb(39, 39, 39);
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.welding-plasma-title h1 {
+    margin-bottom: 50px;
+    text-shadow: 0 10px 30px rgba(255, 0, 0, 0.5);
+}
+
+.welding-plasma-title p {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.welding-item-title {
+    font-size: 1.5rem;
+    text-shadow: 0 10px 20px rgba(255, 255, 255, 0.575);
+}
+
+.welding-items4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welding-item4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 33%;
+}
+
+.welding-item-image2.p1 {
+    background-image: url(../images/aestheticicon.png);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.welding-item-image2.p2 {
+    background-image: url(../images/ecoicon.png);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.welding-item-image2.p3 {
+    background-image: url(../images/destortionicon.png);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+/* Медиазапрос для планшетов */
+@media (max-width: 768px) {
+    .welding-main-image {
+        height: 50vh; /* Уменьшить высоту фона */
+    }
+
+    .weldingp {
+        font-size: 2.5rem; /* Уменьшить шрифт */
+        margin-top: 20%;
+        padding: 30px;
+    }
+
+    .welding-container {
+        padding: 0 50px; /* Уменьшить отступы */
+        gap: 20px;
+    }
+
+    .welding-main-title h1 {
+        font-size: 2rem;
+    }
+
+    .welding-main-title p {
+        font-size: 1rem;
+        max-width: 80%; /* Уменьшить ширину текста */
+    }
+
+    .welding-items {
+        flex-direction: column; /* Ставить элементы в колонку */
+        gap: 30px;
+    }
+
+    .welding-item {
+        font-size: 0.9rem;
+    }
+}
+
+/* Медиазапрос для телефонов */
+@media (max-width: 480px) {
+    .welding-main-image {
+        height: 100vh;
+    }
+
+    .weldingp {
+        border-top: 5px solid red;
+        border-bottom: 5px solid red;
+        margin-top: 100%;
+        width: 90%;
+        border-left: none;
+        padding: 30px;
+        backdrop-filter: blur(5px);
+    }
+
+    .weldingp::before {
+        display: contents;
+    }
+
+    .welding-container {
+        padding: 0 0; /* Уменьшить боковые отступы */
+
+    }
+
+    .welding-start-container {
+        padding: 50px;
+    }
+
+    .welding-title1 {
+        max-width: 100%;
+    }
+
+    .welding-main-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .welding-items {
+        flex-direction: column; /* Полная вертикальная компоновка */
+        gap: 20px;
+    }
+
+    .welding-item-image, .welding-item-image2 {
+        width: 80px; /* Уменьшить изображения */
+        height: 80px;
+    }
+
+    .welding-items3 {
+        flex-direction: column; /* Ставить элементы в колонку */
+        gap: 20px;
+    }
+
+    .welding-items3-left,
+    .welding-items3-right {
+        margin-right: 0;
+    }
+
+    .welding-border h1 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .welding-tig-container {
+        padding: 0;
+    }
+
+    .welding-mig-container {
+        padding: 0;
+    }
+    .welding-items3 {
+        align-items: flex-start;
+    }
+
+    .welding-item3 {
+        text-align: left;
+        gap: 30px;
+    }
+
+    .welding-items2 {
+        flex-direction: column;
+    }
+
+    .welding-mig-title p {
+        max-width: 100%;
+    }
+
+    .welding-plasma-container {
+        padding: 0;
+    }
+
+    .welding-items4 {
+        flex-wrap: wrap;
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .welding-item4 {
+        width: 100%;
+    }
+}
