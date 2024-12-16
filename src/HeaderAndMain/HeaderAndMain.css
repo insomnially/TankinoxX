@@ -126,17 +126,17 @@ ul {
     }
     .imagep {
         font-size: 27px;
-        top: 3%;
+        top: 40%;
         margin: 0;
         left: 0;
-        width: 95%;
+        width: 100%;
         border-top: 5px solid red;
         border-bottom: 5px solid red;
         backdrop-filter: blur(2px);
-        font-size: 33px;
+        font-size: 1.5rem;
         text-align: center;
         border-left: 0;
-        padding: 11px;
+        padding: 5px;
         border-left: none;
         text-shadow: 0 10px 30px white;
 
@@ -254,9 +254,10 @@ ul {
     
     .fullscreen-menu ul {
         display: flex;
+        margin-top: 50px;
         flex-direction: column;
         justify-content: center;
-        gap: 50px;
+        gap: 25px;
         align-items: center;
         z-index: 555;
 
