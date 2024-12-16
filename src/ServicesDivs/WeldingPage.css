@@ -5,7 +5,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     filter: brightness(50%);
 }
 
@@ -413,20 +412,19 @@
     background-repeat: no-repeat;
 }
 
-/* Медиазапрос для планшетов */
 @media (max-width: 768px) {
     .welding-main-image {
-        height: 50vh; /* Уменьшить высоту фона */
+        height: 50vh;
     }
 
     .weldingp {
-        font-size: 2.5rem; /* Уменьшить шрифт */
+        font-size: 2.5rem;
         margin-top: 20%;
         padding: 30px;
     }
 
     .welding-container {
-        padding: 0 50px; /* Уменьшить отступы */
+        padding: 0 50px;
         gap: 20px;
     }
 
@@ -436,11 +434,11 @@
 
     .welding-main-title p {
         font-size: 1rem;
-        max-width: 80%; /* Уменьшить ширину текста */
+        max-width: 80%;
     }
 
     .welding-items {
-        flex-direction: column; /* Ставить элементы в колонку */
+        flex-direction: column;
         gap: 30px;
     }
 
@@ -449,7 +447,6 @@
     }
 }
 
-/* Медиазапрос для телефонов */
 @media (max-width: 480px) {
     .welding-main-image {
         height: 100vh;
@@ -470,7 +467,7 @@
     }
 
     .welding-container {
-        padding: 0 0; /* Уменьшить боковые отступы */
+        padding: 0 0;
 
     }
 
@@ -487,17 +484,17 @@
     }
 
     .welding-items {
-        flex-direction: column; /* Полная вертикальная компоновка */
+        flex-direction: column;
         gap: 20px;
     }
 
     .welding-item-image, .welding-item-image2 {
-        width: 80px; /* Уменьшить изображения */
+        width: 80px;
         height: 80px;
     }
 
     .welding-items3 {
-        flex-direction: column; /* Ставить элементы в колонку */
+        flex-direction: column;
         gap: 20px;
     }
 

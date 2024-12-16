@@ -138,6 +138,11 @@
         width: 100%;
     }
 
+    .services-h1 {
+      font-size: 2rem;
+      border-radius: 0;
+    }
+
     .services-item {
       width: 350px;
       height: 400px;

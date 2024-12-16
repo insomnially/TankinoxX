@@ -160,11 +160,11 @@
 
 @media (max-width: 768px) {
     .careers-imagep h1 {
-        font-size: 50px;
+        font-size: 3rem;
     }
 
     .careers-imagep p {
-        font-size: 30px;
+        font-size: 2rem;
         color: white;
     }
 
@@ -174,9 +174,15 @@
         padding: 11px;
         backdrop-filter: blur(2px);
         margin-top: 90%;
+        font-size: 3rem;
         border-top: 5px solid red;
         border-bottom: 5px solid red;
         width: 95%;
+        border-left: 0;
+    }
+
+    .careers-imagep::before {
+        display: contents;
     }
 
     .careers-image {
