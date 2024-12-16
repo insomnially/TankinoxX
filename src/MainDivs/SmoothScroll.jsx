@@ -1,40 +1,26 @@
-import { useEffect, useRef } from 'preact/hooks';
-import LocomotiveScroll from 'locomotive-scroll';
-import 'locomotive-scroll/dist/locomotive-scroll.css';
+import { useEffect, useRef } from "react";
+import LocomotiveScroll from "locomotive-scroll";
+import "locomotive-scroll/dist/locomotive-scroll.css";
 
 const SmoothScroll = ({ children }) => {
-  const scrollContainerRef = useRef(null);
-  const locoScrollInstance = useRef(null);
+  const scrollRef = useRef(null);
 
   useEffect(() => {
-    if (scrollContainerRef.current) {
-      locoScrollInstance.current = new LocomotiveScroll({
-        el: scrollContainerRef.current,
-        smooth: true,
-        multiplier: 0.5,
-        inertia: 0.2,
-      });
-    }
+    const locoScroll = new LocomotiveScroll({
+      el: scrollRef.current,
+      smooth: true,
+      multiplier: 1,
+      inertia: 0.2,
+    });
 
-    return () => {
-      if (locoScrollInstance.current) {
-        locoScrollInstance.current.destroy();
-      }
-    };
+    return () => locoScroll.destroy();
   }, []);
 
   return (
-    <div
-      data-scroll-container
-      ref={scrollContainerRef}
-      style={{
-        position: 'relative',
-        overflow: 'hidden',
-      }}
-    >
+    <div ref={scrollRef} style={{ overflow: "hidden" }}>
       {children}
     </div>
   );
 };
 
-export default SmoothScroll
+export default SmoothScroll;

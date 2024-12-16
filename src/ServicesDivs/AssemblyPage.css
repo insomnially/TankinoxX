@@ -1,0 +1,436 @@
+.assembly-main-image {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/assembly-main-image.jpg);
+    filter:brightness(40%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.assemblyp {
+    position: absolute;
+    font-size: 4rem;
+    left: 0%;
+    text-align: center;
+    gap: 10px;
+    top: 0;
+    margin-top: 36%;
+    z-index: 11;
+    transition: all 1s;
+    color: rgb(255, 0, 0);
+    animation: fadeIn 1.5s ease forwards;
+    border-left: 8px solid rgb(255, 0, 0);
+    padding: 50px;
+    text-shadow: 0 10px 30px ;
+    cursor: pointer;
+    background-color: transparent;
+    overflow: hidden;
+    font-family: CeraLight;
+    &:hover {
+        color: white;
+    }
+}
+
+.assemblyp span {
+    font-size: 3rem;
+    font-weight: 1;
+    color: white;
+}
+
+.assemblyp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 8px;
+    background-color: rgb(255, 0, 0);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.assemblyp:hover::before {
+    width: 100%;
+    z-index: -1;
+    color: white;
+}
+
+.assembly-container {
+    width: 100%;
+    padding: 0 150px;
+    height: 100%;
+}
+
+.assembly-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.assembly-card.c2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    width: 80%;
+}
+
+.assembly-card.c1 {
+    display: flex;
+    text-align: left;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.assembly-card-image {
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+width: 50%;
+height: 600px;
+filter: brightness(80%);
+border-top-left-radius: 50px;
+border-bottom-right-radius: 50px;
+
+}
+
+.assembly-card-image.c1 {
+    background-image: url(../images/imagee10.jpg);
+    border: 5px solid rgb(29, 29, 29);
+}
+
+.assembly-card-image.c2 {
+    background-image: url(../images/imagee7.jpg);
+    border: 5px solid  rgb(32, 1, 1);
+}
+
+.assembly-description {
+    width: 50%;
+    padding: 50px;
+    text-align: center;
+    background: rgb(29, 29, 29);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-bottom-left-radius: 50px;
+}
+
+.assembly-description.c1 {
+    border-top-right-radius: 50px;
+}
+
+.assembly-description.c2 {
+    border-top-right-radius: 50px;
+    background: rgb(32, 1, 1);
+}
+
+.assembly-description h1 {
+    text-shadow: 0 10px 30px rgba(255, 255, 255, 0.493);
+    font-family: CeraProBold;
+    font-size: 2rem;
+}
+.assembly-div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.assembly-div-description {
+    text-align: center;
+    gap: 15px;
+}
+
+
+.assembly-div-description.c1 {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.assembly-div-description.c2 {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.assembly-div-description.c3 {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+.assembly-div-descriptions {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+    background: rgb(31, 31, 31);
+    padding: 50px;
+    border-radius: 50px;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.assembly-div ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.assembly-div ul li {
+    cursor: default;
+    &:hover {
+        opacity: 1;
+        color: white;
+    }
+    &::before {
+        content: "→";
+        padding-right: 10px;
+        color: rgb(255, 0, 0);
+    }
+}
+
+.assembly-div-description h1 {
+    font-size: 1.5rem;
+    font-weight: 1;
+    font-family: CeraProBold;
+    text-shadow: 0 10px 30px rgba(255, 255, 255, 0.444);
+}
+
+.assembly-title h1 {
+    font-size: 2rem;
+    text-shadow: 0 10px 30px rgba(255, 0, 0, 0.485);
+    font-family: CeraProBold;
+}
+.assembly-title {
+    text-align: center;
+}
+
+.assembly-kipia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.assembly-border{
+    margin: 100px 0;
+    background-color: rgb(20, 0, 0);
+    padding: 50px;
+    text-align: center;
+    font-family: CeraProBold;
+    text-shadow: 0 10px 30px rgba(255, 255, 255, 0.409);
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    display: flex;
+    justify-content: center;
+
+}
+
+.assembly-border h1 {
+    max-width: 1000px;
+}
+
+.assembly-cards {
+    padding: 0 150px;
+}
+
+.assembly-div {
+    padding: 0 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.assembly-kipia ul {
+    width: 100%;
+    flex-direction: column;
+}
+
+.assembly-div2 {
+    padding: 0 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.assembly-kipia p {
+    margin: 25px 0;
+    font-size: 1.5rem;
+    font-family: CeraProBold;
+    text-shadow: 0 10px 30px rgba(255, 255, 255, 0.448);
+    width: 50%;
+}
+
+.assembly-kipia ul li {
+    padding: 15px 0;
+    cursor: default;
+    &:hover {
+        opacity: 1;
+        color: white;
+    }
+    &::before {
+        content: "→";
+        padding-right: 10px;
+        color: rgb(255, 0, 0);
+    }
+}
+
+.assembly-title{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.t-assembly {
+    font-size: 1.25rem;
+    width: 50%;
+    text-shadow: 0 10px 30px rgba(255, 255, 255, 0.497);
+}
+
+@media (max-width:768px) {
+    .assemblyp {
+        border: none;
+        border-top: 5px solid red;
+        border-bottom: 5px solid red;
+        backdrop-filter: blur(5px);
+        margin-top: 75%;
+        font-size: 3rem;
+        padding: 15px;
+    }
+
+    .assemblyp span {
+        font-size: 2rem;
+    }
+
+    .assemblyp::before {
+        display: contents;
+    }
+
+    .assembly-cards {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .assembly-card.c1 {
+        flex-direction: column;
+        width: 90%;
+    }
+    .assembly-card.c2 {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .assembly-card-image {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .assembly-description {
+        width: 95%;
+        border-radius: 10px;
+    }
+
+    .assembly-description.c1 {
+        width: 95%;
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .assembly-description.c2 {
+        width: 95%;
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .assembly-div {
+        flex-direction: column;
+        padding: 0;
+
+    }
+
+    .assembly-div-descriptions {
+        flex-direction: column;
+        height: 100%;
+        padding: 50px 25px;
+    }
+
+    .assembly-div-description.c1 {
+        width: 100%;
+    }
+
+    .assembly-div-description.c2 {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .assembly-div ul {
+        display: flex;
+        padding: 0px;
+        margin-bottom: 50px;
+    }
+
+    .assembly-div ul li {
+        display: block;
+    }
+
+    .assembly-div-description.c3 {
+        width: 100%;
+    }
+
+    .assembly-border {
+        width: 100%;
+        padding: 5px;
+
+    }
+
+    .assembly-border h1 {
+        max-width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .assembly-div2 {
+        padding: 0;
+    }
+
+    .assembly-div2 ul li {
+        display: block;
+        width: 90%;
+    }
+
+    .t-assembly {
+        width: 100%;
+    }
+
+    .assembly-kipia ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .assembly-kipia p {
+        width: 100%;
+    }
+
+    .assembly-title {
+        width: 95%;
+    }
+}

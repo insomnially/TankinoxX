@@ -1,9 +1,8 @@
 import React from 'react'
-import SmoothScroll from '../MainDivs/SmoothScroll'
 import Footer from '../Footer/Footer'
-import './AboutUs.css'
 import Header from '../HeaderAndMain/Header'
 import ServicesDiv from '../ServicesDivs/ServicesDiv'
+import SmoothScroll from '../MainDivs/SmoothScroll'
 
 export function Services() {
 

@@ -11,6 +11,12 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 
 export default function EngineeringPage() {
   const { t } = useTranslation();
+  const handleScroll = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  };
 
   const delayStep = 0.2;
   const { ref: titleRef, inView: titleInView } = useInView({ triggerOnce: true, threshold: 0.2 });
@@ -36,6 +42,7 @@ export default function EngineeringPage() {
           initial={{ opacity: 0, y: -50 }}
           animate={titleInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: delayStep }}
+          onClick={handleScroll}
         >
           {t('engineering.title')}<br /><span>{t('engineering.subtitle')}</span>
         </motion.h1>

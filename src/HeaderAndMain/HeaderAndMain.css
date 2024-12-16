@@ -66,82 +66,6 @@ ul {
     src: url(../fonts/Fahkwang-Bold.ttf);
 }
 
-.image {
-    background-image: url(../images/main-image.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    position: relative;
-    filter: brightness(50%);
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: 2;
-    
-}
-
-.imagep {
-    position: absolute;
-    font-size: 4rem;
-    left: 4%;
-    margin-top: 33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    width: 45%;
-    gap: 10px;
-    z-index: 3;
-    transition: all 1s;
-    animation: fadeIn 1.5s ease forwards;
-    border-left: 8px solid red;
-    padding: 15px;
-    cursor: pointer;
-    background-color: transparent;
-    overflow: hidden;
-}
-
-
-.imagep::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 8px;
-    background-color: red;
-    transition: all 0.5s ease;
-    z-index: -1;
-}
-
-.imagep:hover::before {
-    width: 100%;
-    z-index: -1;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-.arrow {
-    font-size: 6rem;
-    rotate: 90deg;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    background-color: rgb(255, 0, 0);
-    display: flex;
-}
-
 .menuall {
     display: none;
     transition: all 0.3s ease;
@@ -214,6 +138,7 @@ ul {
         border-left: 0;
         padding: 11px;
         border-left: none;
+        text-shadow: 0 10px 30px white;
 
     }
     

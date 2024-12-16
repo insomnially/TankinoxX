@@ -12,6 +12,12 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 export default function WeldingPage() {
     const { t } = useTranslation();
     const { ref: buttonRef, inView: buttonInView } = useInView({ triggerOnce: true, threshold: 0.2 });
+    const handleScroll = () => {
+      window.scrollTo({
+        top: window.innerHeight,
+        behavior: "smooth",
+      });
+    };
 
     const fadeInUp = {
         hidden: { opacity: 0, y: 20 },
@@ -38,6 +44,7 @@ export default function WeldingPage() {
                     whileInView="visible"
                     viewport={{ once: true }}
                     variants={fadeInUp}
+                    onClick={handleScroll}
                 >
                     {t('weldingPage.title1')}<br/>
                 </motion.h1>

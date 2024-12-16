@@ -1,11 +1,11 @@
 import './FirstDiv.css';
+import React from "react";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useTranslation } from 'react-i18next';
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { Link } from 'react-router-dom';
-import { animateScroll as scroll } from 'react-scroll';
+import { Link as Link } from "react-router-dom"; // Link для маршрутизации
 import '../HeaderAndMain/HeaderAndMain.css';
 
 export default function FirstDiv() {
@@ -24,28 +24,32 @@ export default function FirstDiv() {
     triggerOnce: true,
   });
 
-  const { t } = useTranslation();
-
-  const handleScrollDown = () => {
-    scroll.scrollMore(window.innerHeight, {
-      duration: 500,
-      smooth: true,
+  const handleScroll = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
     });
   };
 
+  const { t } = useTranslation();
+
   return (
     <>
-      <div className="imagep" onClick={handleScrollDown}>
-        <div className="arrow"><MdOutlineArrowOutward /></div>
-        {t('highQualityTitle')}
-      </div>
       <motion.div
-        className="image"
-        ref={imageRef}
-        initial={{ opacity: 0 }}
-        animate={imageInView ? { opacity: 1 } : {}}
-        transition={{ duration: 1 }}
-      ></motion.div>
+      className="image"
+      initial={{ opacity: 0 }}
+      animate={imageInView ? { opacity: 1 } : {}}
+      transition={{ duration: 1 }}
+      ref={imageRef}>
+        </motion.div>
+
+      <motion.h1
+       className='imagep'
+       onClick={handleScroll}
+       >
+       <div className="arrow"><MdOutlineArrowOutward/></div>
+       {t('highQualityTitle')}
+       </motion.h1>
 
       <motion.div
         className="containerfirst"

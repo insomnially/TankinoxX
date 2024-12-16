@@ -44,7 +44,7 @@ export default function AboutThird() {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 1.2, delay: 0.4 }}
+          transition={{ duration: 1, delay: 0.2 }}
         >
           <div className="aboutthird-description">
             <h2>{t("reliability")}</h2>
@@ -58,7 +58,7 @@ export default function AboutThird() {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 1.4, delay: 0.6 }}
+          transition={{ duration: 1, delay: 0.2 }}
         >
           <div className="aboutthird-description">
             <h2>{t("customerFocus")}</h2>
@@ -72,7 +72,7 @@ export default function AboutThird() {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 1.6, delay: 0.8 }}
+          transition={{ duration: 1, delay: 0.2 }}
         >
           <div className="aboutthird-description">
             <h2>{t("sustainability")}</h2>
@@ -85,7 +85,7 @@ export default function AboutThird() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 1.2, delay: 1 }}
+        transition={{ duration: 1, delay: 0.2 }}
       >
         <h2>{t("ourFacilities")}</h2>
         <p>{t("ourFacilitiesText")}</p>
@@ -97,7 +97,7 @@ export default function AboutThird() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 2, delay: 1.4 }}
+        transition={{ duration: 1, delay: 0.2 }}
       >
         <h2>{t("lookingToTheFuture")}</h2>
         <p>{t("lookingToTheFutureText")}</p>
@@ -115,7 +115,7 @@ export default function AboutThird() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 1.6, delay: 1.6 }}
+        transition={{ duration: 1, delay: 0.4 }}
       >
         <h2>{t("tankinoxPartner")}</h2>
         <p>{t("tankinoxPartnerText")}</p>

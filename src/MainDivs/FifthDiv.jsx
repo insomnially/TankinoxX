@@ -17,12 +17,14 @@ export default function FifthDiv() {
   const { t } = useTranslation();
 
   const rectangles = [
-    { id: 1, text: t("engineering") },
-    { id: 2, text: t("welding") },
-    { id: 3, text: t("assembly") },
-    { id: 4, text: t("thermal") },
-    { id: 5, text: t("stamping") },
+    { id: 1, text: t("fifth.engineering"), link: "/TankinoxX/services/engineering" },
+    { id: 2, text: t("fifth.stamping"), link: "/TankinoxX/services/cutting-and-stamping" },
+    { id: 3, text: t("fifth.equipmentProduction"), link: "/TankinoxX/services/equipment" },
+    { id: 4, text: t("fifth.welding"), link: "/TankinoxX/services/welding" },
+    { id: 5, text: t("fifth.assembly"), link: "/TankinoxX/services/assembly" },
+    { id: 6, text: t("fifth.thermal"), link: "/TankinoxX/services/thermal" },
   ];
+  
 
   const { ref, inView } = useInView({
     threshold: 0.2,
@@ -71,22 +73,25 @@ export default function FifthDiv() {
             spaceBetween: 50,
           },
           1280: {
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 100,
           },
         }}
       >
         {rectangles.map((rect) => (
           <SwiperSlide key={rect.id}>
-            <motion.div
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              className="rectangle"
-              initial={{ opacity: 0, y: -50 }}
-              transition={{ duration: 1, delay: 1 }}
-            >
-              {rect.text}
-            </motion.div>
-          </SwiperSlide>
+  <Link to={rect.link} className="rectangle-link">
+    <motion.div
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      className="rectangle"
+      initial={{ opacity: 0, y: -50 }}
+      transition={{ duration: 1, delay: 1 }}
+    >
+      {rect.text}
+    </motion.div>
+  </Link>
+</SwiperSlide>
+
         ))}
       </Swiper>
 

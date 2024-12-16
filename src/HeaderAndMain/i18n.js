@@ -7,9 +7,81 @@ const resources = {
     translation: {
       about: 'About us',
       technologies: 'Technologies',
+      fifth : {
+        engineering: "ENGINEERING",
+        welding: "WELDING",
+        assembly: "ASSEMBLY",
+        thermal: "THERMAL INSULATION",
+        stamping: "CUTTING AND STAMPING",
+        equipmentProduction: "EQUIPMENT PRODUCTION"
+      },
       products: 'Products',
       services: 'Services',
       careers: 'Careers',
+      assemblyPage: {
+        title: "Assembly and Installation | TANKINOX",
+        subtitle: "Works",
+        mainTitle: "Assembly and Installation",
+        cards: {
+          c1: {
+            title: "Commissioning and Start-Up Works",
+            description: "This is the final stage of assembly works. Our specialists perform complex technical testing and equipment servicing prior to commissioning."
+          },
+          c2: {
+            title: "Supervisor Assembly of Storage and Auxiliary Equipment",
+            description: "Supervisor assembly includes comprehensive quality control and adherence to technical standards. This ensures fully operational equipment."
+          }
+        },
+        safety: {
+          title: "Production Safety",
+          description: "Installation meets sanitary-technological norms and ensures ecological production and worker safety."
+        },
+        installation: {
+          title: "Installation and Piping",
+          description: "Request installation and piping services with ARTINOX™ - we guarantee timely service and affordable rates!",
+          items: [
+            "Industrial tanks and reservoirs",
+            "Technological pipelines",
+            "Heat exchange equipment",
+            "Auxiliary elements"
+          ]
+        },
+        efficiency: {
+          title: "High Efficiency",
+          description: "Supervisor assembly and commissioning require careful calibration, ensuring equipment is functioning properly, and errors are rectified."
+        },
+        testing: "We conduct not only installation works but also testing for the integrity of welded joints.",
+        kipia: {
+          title: "Works on Control and Measuring Instruments",
+          description1: "Engineering system development and implementation require properly planned KIPiA works.",
+          description2: "ARTINOX offers professional services from experienced specialists with years of expertise.",
+          items: [
+            "Development of technical assignment",
+            "KIPiA design and calculations",
+            "Specification and material selection",
+            "Construction and installation works",
+            "Installation of KIPiA and commissioning"
+          ],
+          tracking: "Using KIPiA tools, we track:",
+          trackingItems: [
+            "Working medium temperature",
+            "Concentration of explosive substances",
+            "Concentration of toxic substances",
+            "Flow rate",
+            "Radiation intensity",
+            "Liquid levels",
+            "Density, strength, and other material properties"
+          ],
+          equipment: "We can equip storage systems with:",
+          equipmentItems: [
+            "Temperature sensors",
+            "Pressure sensors",
+            "Level sensors",
+            "Other measuring instruments"
+          ]
+        }
+      },
+  
       contacts: 'Contacts',
       language: 'Language',
       highQualityTitle: "HIGH-QUALITY STAINLESS TANKS FOR INDUSTRIAL APPLICATIONS",
@@ -439,6 +511,14 @@ const resources = {
       products: 'Продукция',
       services: 'Услуги',
       careers: 'Карьера',
+      fifth: {
+        engineering: "ИНЖИНИРИНГ",
+        welding: "СВАРКА",
+        assembly: "МОНТАЖ И СБОРКА",
+        thermal: "ТЕПЛОИЗОЛЯЦИЯ",
+        stamping: "РЕЗКА И ШТАМПОВКА",
+        equipmentProduction: "ПРОИЗВОДСТВО ОБОРУДОВАНИЯ"
+      },
       contacts: 'Контакты',
       weldingPage: {
         title: "Сварка | TANKINOX",
@@ -768,6 +848,69 @@ const resources = {
     workingHours: "Как мы работаем:",
     workingTime: "10:00-18:00",
     address: "Наш адрес:",
+    assemblyPage: {
+      title: "Монтажно-сборочные работы | TANKINOX",
+      mainTitle: "Монтажно-сборочные",
+      subtitle: "работы",
+      cards: {
+        c1: {
+          title: "Пуско-наладочные процедуры",
+          description: "Это завершающий этап подготовки оборудования. Наши специалисты проводят проверку и настройку, чтобы гарантировать надежность и готовность к эксплуатации."
+        },
+        c2: {
+          title: "Монтаж и проверка оборудования",
+          description: "Монтаж оборудования проводится с особым вниманием к качеству и стандартам, чтобы техника работала бесперебойно и эффективно."
+        }
+      },
+      safety: {
+        title: "Безопасность на производстве",
+        description: "Наши монтажные работы соответствуют современным стандартам безопасности и экологическим нормам, обеспечивая безопасные условия труда и минимальное воздействие на окружающую среду."
+      },
+      installation: {
+        title: "Монтаж и подключение трубопроводов",
+        description: "Предлагаем высококачественные услуги по монтажу и подключению трубопроводов и оборудования по разумной стоимости. Все заказы выполняются точно в срок.",
+        items: [
+          "Промышленные резервуары и хранилища",
+          "Трубопроводы для технологических процессов",
+          "Теплообменники",
+          "Дополнительные вспомогательные системы"
+        ]
+      },
+      efficiency: {
+        title: "Оптимизация производительности",
+        description: "Проведение проверок и тестов позволяет убедиться в исправности оборудования и оптимальной настройке всех систем."
+      },
+      testing: "Мы проводим детальные тесты, чтобы убедиться в надежности и герметичности соединений и сварных швов.",
+      kipia: {
+        title: "Системы контроля и измерений",
+        description1: "Создание и настройка инженерных систем требуют точного планирования и профессионального выполнения.",
+        description2: "TANKINOX предлагает профессиональные услуги от опытных специалистов, имеющих многолетний опыт в области контроля и измерений.",
+        items: [
+          "Сборка технической документации и спецификаций",
+          "Проектирование и расчетные расчеты КИПиА",
+          "Выбор материалов и составление спецификаций",
+          "Монтаж и подготовительные строительно-монтажные работы",
+          "Тестирование и проверка систем КИПиА"
+        ],
+        tracking: "Контроль и мониторинг данных с помощью КИПиА позволяет отслеживать:",
+        trackingItems: [
+          "Температурные параметры среды",
+          "Концентрация опасных веществ",
+          "Уровень токсичных паров",
+          "Объем и расход",
+          "Интенсивность излучений",
+          "Уровень жидкости в резервуарах",
+          "Физические свойства материалов"
+        ],
+        equipment: "Возможность оснащения оборудованием для контроля:",
+        equipmentItems: [
+          "Датчики температуры",
+          "Датчики давления",
+          "Датчики уровня",
+          "Другие контрольные системы"
+        ]
+      }
+    },
     addressDetails: "ул. Индустриале 1, с. Мэгдэчешть, р-н Криулень, Республика Молдова, MD-4829",
     onMaps: "Мы на картах:",
     instagram: "Instagram: @Tankinox",
@@ -861,6 +1004,14 @@ const resources = {
       about: 'Despre noi',
       technologies: 'Tehnologii',
       products: 'Produse',
+      fifth: {
+        engineering: "INGINERIE",
+        welding: "SUDARE",
+        assembly: "MONTAJ ȘI ASAMBLARE",
+        thermal: "IZOLAȚIE TERMICĂ",
+        stamping: "TĂIERE ȘI ȘTANȚARE",
+        equipmentProduction: "PRODUCȚIE DE ECHIPAMENTE"
+      },
       services: 'Servicii',
       weldingPage: {
         title: "Sudură | TANKINOX",
@@ -938,6 +1089,69 @@ const resources = {
       brandTitle: "BRANDUL TANKINOX",
       services11: "Tankinox se specializează ",
       services11span:"în optimizarea producției, ",
+      assemblyPage: {
+      title: "Montaj și Asamblare | TANKINOX",
+  mainTitle: "Lucrari de asamblare",
+  subtitle: "si montaj",
+  cards: {
+    c1: {
+      title: "Proceduri de Punere în Funcțiune",
+      description: "Echipa noastră testează și pregătește echipamentele înainte de punerea lor în funcțiune pentru a garanta performanța și funcționarea corectă."
+    },
+    c2: {
+      title: "Asamblare și Inspecție Tehnică",
+      description: "Asamblarea și verificările tehnice sunt esențiale pentru a asigura funcționarea fără întreruperi și conformitatea cu standardele tehnice."
+    }
+  },
+  safety: {
+    title: "Siguranța la Locul de Muncă",
+    description: "Respectăm normele de siguranță și reglementările ecologice pentru a proteja personalul și pentru a asigura condiții de lucru sigure și eficiente."
+  },
+  installation: {
+    title: "Instalare și Conectare Conducte",
+    description: "Oferim servicii de înaltă calitate pentru instalarea și conectarea sistemelor tehnologice la prețuri accesibile și în termenul stabilit.",
+    items: [
+      "Rezervoare pentru stocare industrială",
+      "Conducte tehnologice",
+      "Schimbătoare de căldură",
+      "Elemente auxiliare"
+    ]
+  },
+  efficiency: {
+    title: "Maximizarea Eficienței",
+    description: "Procesul de testare și verificare ne asigură că toate componentele sunt configurate corect și funcționează optim."
+  },
+  testing: "Realizăm teste detaliate pentru a ne asigura că echipamentele sunt sigure și fără scurgeri.",
+  kipia: {
+    title: "Sisteme de Monitorizare și Control",
+    description1: "Planificarea și implementarea sistemelor de inginerie necesită o abordare detaliată și profesionistă.",
+    description2: "TANKINOX oferă asistență profesională din partea inginerilor cu experiență vastă în acest domeniu.",
+    items: [
+      "Elaborarea documentației tehnice",
+      "Proiectarea sistemelor și calcule tehnice",
+      "Selectarea materialelor și crearea specificațiilor",
+      "Realizarea lucrărilor de montaj și construcție",
+      "Testarea și punerea în funcțiune a sistemelor"
+    ],
+    tracking: "Folosim sisteme de monitorizare pentru a urmări următoarele:",
+    trackingItems: [
+      "Temperatura mediului de lucru",
+      "Concentrația substanțelor periculoase",
+      "Concentrația substanțelor toxice",
+      "Debitul și presiunea sistemului",
+      "Intensitatea radiațiilor",
+      "Nivelul fluidelor",
+      "Proprietățile fizice ale materialelor"
+    ],
+    equipment: "Echipamentele pot fi dotate cu următoarele dispozitive:",
+    equipmentItems: [
+      "Senzori de temperatură",
+      "Senzori de presiune",
+      "Senzori de nivel",
+      "Alte echipamente de monitorizare"
+    ]
+  },
+},
       services11nospan:"care include întreaga gamă de servicii:",
       cuttingPage: {
         cuttingp: "Tăiere",

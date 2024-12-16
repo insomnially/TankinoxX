@@ -12,8 +12,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
+    "better-scroll": "^2.5.1",
     "framer-motion": "^11.11.17",
     "git": "^0.1.5",
+    "gsap": "^3.12.5",
     "i18next": "^23.16.5",
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-http-backend": "^2.6.2",

@@ -10,6 +10,12 @@ import innovation from "../images/innovation.png";
 
 export default function CareersDiv() {
   const { t } = useTranslation();
+  const handleScroll = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  };
 
   const { ref: imageRef, inView: imageInView } = useInView({ triggerOnce: true });
   const { ref: titleRef, inView: titleInView } = useInView({ triggerOnce: true });
@@ -28,6 +34,7 @@ export default function CareersDiv() {
 
       <motion.div
         className="careers-imagep"
+        onClick={handleScroll}
         initial={{ opacity: 0, y: 20 }}
         animate={imageInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1, delay: 0.2 }}

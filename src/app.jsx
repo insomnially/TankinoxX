@@ -15,6 +15,7 @@ import EquipmentPage from './ServicesDivs/EquipmentPage';
 import ThermalPage from './ServicesDivs/ThermalPage';
 import CuttingPage from './ServicesDivs/CuttingPage';
 import WeldingPage from './ServicesDivs/WeldingPage'
+import AssemblyPage from './ServicesDivs/AssemblyPage';
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
@@ -53,6 +54,7 @@ function AppContent() {
           <Route path="/TankinoxX/services/thermal" element={<ThermalPage />} />
           <Route path="/TankinoxX/services/cutting-and-stamping" element={<CuttingPage />} />
           <Route path="/TankinoxX/services/welding" element={<WeldingPage />} />
+          <Route path="/TankinoxX/services/assembly" element={<AssemblyPage />} />
         </Routes>
       )}
     </>

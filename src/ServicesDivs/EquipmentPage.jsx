@@ -11,6 +11,13 @@ import { useTranslation } from 'react-i18next';
 
 export default function EquipmentPage() {
   const { t } = useTranslation();
+  const handleScroll = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  };
+
 
   const { ref: infoRef, inView: infoInView } = useInView({ triggerOnce: true, threshold: 0.2 });
   const { ref: buttonRef, inView: buttonInView } = useInView({ triggerOnce: true, threshold: 0.2 });
@@ -31,6 +38,7 @@ export default function EquipmentPage() {
 
         <h1
           className='equipmentp'
+          onClick={handleScroll}
         >
           {t('equipment.title')}<br />
           <span>{t('equipment.subtitle')}</span>

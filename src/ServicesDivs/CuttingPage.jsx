@@ -13,7 +13,14 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 export default function CuttingPage() {
     const { t } = useTranslation();
     const { ref: titleRef, inView: titleInView } = useInView({ triggerOnce: true, threshold: 0.2 });
-    const { ref: buttonRef, inView: buttonInView } = useInView({ triggerOnce: true, threshold: 0.2 });
+
+
+    const handleScroll = () => {
+      window.scrollTo({
+        top: window.innerHeight,
+        behavior: "smooth",
+      });
+    };
     const fadeInUp = {
         hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
@@ -40,6 +47,7 @@ export default function CuttingPage() {
                     initial={{ opacity: 0, y: -50 }}
                     animate={titleInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 1 }}
+                    onClick={handleScroll}
                 >
                     {t('cuttingPage.cuttingp')}<br />
                     <span>{t('cuttingPage.cuttingpbr')}</span>
