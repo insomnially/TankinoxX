@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import './ServicesDiv.css';
-import SmoothScroll from '../MainDivs/SmoothScroll';
 
 export default function ServicesDiv() {
   const { t, i18n } = useTranslation();

@@ -341,7 +341,6 @@ export default function CuttingPage() {
                 
           <div className="buttonwrap1">
             <motion.div
-              ref={buttonRef}
               className="buttoncontacts"
               initial="hidden"
               whileInView="visible"

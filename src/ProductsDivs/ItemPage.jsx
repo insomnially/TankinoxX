@@ -128,7 +128,6 @@ export default function ItemPage() {
   return (
     <>
       <Header />
-      <SmoothScroll>
       <motion.h1
         className="item-title"
         ref={titleRef}
@@ -220,7 +219,6 @@ export default function ItemPage() {
       </motion.div>
       </div>
       <Footer />
-      </SmoothScroll>
     </>
   );
 }

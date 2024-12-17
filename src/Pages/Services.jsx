@@ -10,10 +10,8 @@ export function Services() {
   return (
     <>
     <Header/>
-    <SmoothScroll>
     <ServicesDiv/>
     <Footer/>
-    </SmoothScroll>
     </>
   )
 }
