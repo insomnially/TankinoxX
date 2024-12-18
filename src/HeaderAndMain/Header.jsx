@@ -35,7 +35,7 @@ export default function Header() {
           <li><Link to="/TankinoxX/about">{t('about')}</Link></li>
           <li><Link to="/TankinoxX/technologies">{t('technologies')}</Link></li>
           <li><Link to="/TankinoxX/products">{t('products')}</Link></li>
-          <li className="logo"><Link to="/TankinoxX">TANKINOX</Link></li>
+          <li className="logo"><Link to="/TankinoxX">TANKİNOX</Link></li>
           <li><Link to="/TankinoxX/services">{t('services')}</Link></li>
           <li><Link to="/TankinoxX/careers">{t('careers')}</Link></li>
           <li><Link to="/TankinoxX/contacts">{t('contacts')}</Link></li>
