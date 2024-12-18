@@ -110,6 +110,7 @@
     width: 35%;
     height: 600px;
     background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
 .engineering-card-image.c1 {
@@ -338,7 +339,6 @@
         width: 95%;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
-        background-attachment: fixed;
     }
 
     .engineering-card-description {

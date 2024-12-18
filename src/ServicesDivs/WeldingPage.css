@@ -121,6 +121,7 @@
     box-shadow: 0 10px 30px rgba(255, 255, 255, 0.181);
     background-position: center;
     background-size: cover;
+    background-attachment: scroll;
 }
 
 .welding-item {
@@ -136,17 +137,22 @@
 
 .welding-item-image.s2 {
     background-image: url(../images/stainlessicon.png);
+    background-attachment: scroll;
 }
+
 
 .welding-item-image.s1 {
     background-image: url(../images/steel2icon.png);
+    background-attachment: scroll;
 }
 
 .welding-item-image.s4 {
     background-image: url(../images/chuguicon.png);
+    background-attachment: scroll;
 }
 .welding-item-image.s3 {
     background-image: url(../images/steelicon.png);
+    background-attachment: scroll;
 }
 
 

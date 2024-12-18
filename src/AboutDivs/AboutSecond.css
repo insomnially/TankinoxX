@@ -118,6 +118,7 @@
     width: 800px;
     height: 600px;
     border-radius: 20px;
+    background-attachment: scroll;
   }
   
   @media (max-width:768px) {

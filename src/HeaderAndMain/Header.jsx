@@ -63,13 +63,7 @@ export default function Header() {
 
       <div className={`fullscreen-menu ${menuOpen ? 'open' : ''}`}>
         <ul>
-          <li><Link to="/TankinoxX/about">{t('about')}</Link></li>
-          <li><Link to="/TankinoxX/technologies">{t('technologies')}</Link></li>
-          <li><Link to="/TankinoxX/products">{t('products')}</Link></li>
-          <li><Link to="/TankinoxX/services">{t('services')}</Link></li>
-          <li><Link to="/TankinoxX/contacts">{t('contacts')}</Link></li>
-          <li><Link to="/TankinoxX/careers">{t('careers')}</Link></li>
-          <select
+        <select
             onChange={(e) => changeLanguage(e.target.value)}
             defaultValue={i18n.language}
           >
@@ -77,6 +71,12 @@ export default function Header() {
             <option value="ru">RU</option>
             <option value="ro">RO</option>
           </select>
+          <li><Link to="/TankinoxX/about">{t('about')}</Link></li>
+          <li><Link to="/TankinoxX/technologies">{t('technologies')}</Link></li>
+          <li><Link to="/TankinoxX/products">{t('products')}</Link></li>
+          <li><Link to="/TankinoxX/services">{t('services')}</Link></li>
+          <li><Link to="/TankinoxX/contacts">{t('contacts')}</Link></li>
+          <li><Link to="/TankinoxX/careers">{t('careers')}</Link></li>
         </ul>
       </div>
     </div>

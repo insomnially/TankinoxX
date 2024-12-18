@@ -13,7 +13,7 @@ li {
     font-family: CeraLight;
     font-weight: 1;
     padding: 28px 0 0 0;
-    z-index: 9999;
+    z-index: 599;
     text-shadow: 0 4px 8px rgba(255, 255, 255, .5);
 }
 
@@ -25,11 +25,11 @@ li:hover {
   
 
 ul {
-    display: flex;
+    display: flex;;
     justify-content: space-between;
     flex-direction: row;
-    padding: 0 80px;
-    width: 106vw;
+    padding: 0 50px;
+    width: 107vw;
 }
 
 .header {
@@ -89,20 +89,29 @@ ul {
 
 .header ul li select {
     font-family: Cera;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 8px;
     background-color: transparent;
-    padding: 5px;
-    top: 27%;
+    padding: 5px 15px;
     color: white;
     border: none;
-    position: absolute;
-    right: 6.7%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     outline: none;
+    position: absolute;
+    right: 7%;
+    top: 27%;
+    appearance: none;
+    background-image: url(../images/arrowdown.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 25%;
+    appearance: none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+
 
 }
 
@@ -235,7 +244,7 @@ ul {
         height: 100%;
         background-color: rgba(14, 13, 13, 0.99);
         color: white;
-        z-index: 54;
+        z-index: 5555;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -254,12 +263,11 @@ ul {
     
     .fullscreen-menu ul {
         display: flex;
-        margin-top: 50px;
         flex-direction: column;
         justify-content: center;
         gap: 25px;
         align-items: center;
-        z-index: 555;
+        z-index: 19999;
 
     }
     
@@ -279,13 +287,14 @@ ul {
         height: 120px;
     }
 
-    .fullscreen-menu li {
+    .fullscreen-menu ul li {
         font-size: 25px;
         font-family: CeraLight;
         display: flex;
         justify-content: center;
         width: 100%;
         cursor: pointer;
+        z-index: 999;
         &:hover {
             opacity: 0.7;
             color: rgb(218, 217, 217);
@@ -293,32 +302,38 @@ ul {
         }
     }
       .header {
-        z-index: 55;
+        z-index: 5556;
         position: fixed;
       }
 
       .logo {
         border-bottom: 0px;
         box-shadow: 0px 0px 0px;
+
       }
 
       .fullscreen-menu select {
-        position: absolute;
         border-radius: 20px;
         z-index: 555;
-        top: 0;
-        background-color: rgb(61, 61, 61);
-        margin-top: 20%;
+        background-color: rgb(31, 31, 31);
         color: rgb(255, 255, 255);
         font-family: Cera;
         font-size: 18px;
-        padding: 5px 15px;
+        padding: 5px 25px;
         outline: none;
         border: none;
+        background-image: url(../images/arrowdown.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 25%;
+        appearance: none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
       }
 
       .fullscreen-menu select option {
         color: rgb(255, 255, 255);
+
       }
 
 }

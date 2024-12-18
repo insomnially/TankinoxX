@@ -186,6 +186,7 @@
     filter: brightness(75%);
     height: 600px;
     width: 50%;
+    background-attachment: scroll;
 }
 
 .equipment-card-image.c1 {

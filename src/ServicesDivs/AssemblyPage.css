@@ -97,6 +97,7 @@ height: 600px;
 filter: brightness(80%);
 border-top-left-radius: 50px;
 border-bottom-right-radius: 50px;
+background-attachment: scroll;
 
 }
 
