@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../HeaderAndMain/Header';
 import Footer from '../Footer/Footer';
 import './EngineeringPage.css';
@@ -11,6 +11,9 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 
 export default function EngineeringPage() {
   const { t } = useTranslation();
+     useEffect(() => {
+          document.title = t('engineeringPage.title');
+      }, [t]);
   const handleScroll = () => {
     window.scrollTo({
       top: window.innerHeight,

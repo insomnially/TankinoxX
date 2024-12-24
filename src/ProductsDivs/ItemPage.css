@@ -28,6 +28,62 @@
 
 }
 
+.item-page-item {
+  background-size: cover;
+  width: 450px;
+  height: 500px;
+  background-position: center;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgb(58, 58, 58);
+  background-repeat: no-repeat;
+  border: 2px solid rgb(61, 61, 61);
+  cursor: pointer;
+}
+
+
+.itempage-gallery-title {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 3rem;
+  background-color: rgb(32, 1, 1);
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  text-shadow: 0 10px 30px rgba(255, 255, 255, 0.644);
+  font-family: CeraProBold;
+  padding: 50px 500px;
+}
+
+.react-responsive-modal-modal {
+  padding: 5px !important;
+  padding-bottom: 0;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.295) !important;
+}
+
+.react-responsive-modal-closeButton {
+  background-color: rgb(255, 0, 0) !important;
+  border-radius: 100%;
+  transition: all .5s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.itempage-gallery-title span {
+  text-shadow: 0 10px 30px rgba(255, 0, 0, 0.651);
+}
+
+.itempage-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 150px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+
+}
+
 .item-description {
   font-size: 1.5rem;
   text-align: left;
@@ -37,6 +93,7 @@
   color: rgb(255, 255, 255);
 
 }
+
 
 .item-details h3 {
   font-size: 1.5rem;
@@ -111,13 +168,6 @@
   font-weight: bold;
 }
 
-.item-container {
-  position: sticky !important;
-  top: 100px;
-  margin-bottom: 50px;
-  z-index: 10;
-}
-
 .buttoncontacts {
   font-size: 20px;
   background-color: rgb(255, 0, 0);
@@ -152,6 +202,7 @@
   .item-title {
     font-size: 2rem;
     width: 100%;
+    text-align: center;
   }
 
   .item-page {
@@ -188,5 +239,14 @@
 
   .item-highlight::after {
     width: 100%;
+  }
+
+  .itempage-gallery-title {
+    padding: 10px;
+    font-size: 2rem;
+  }
+
+  .itempage-gallery {
+    padding: 0 10px;
   }
 }

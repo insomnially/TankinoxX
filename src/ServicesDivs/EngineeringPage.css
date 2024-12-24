@@ -1,7 +1,7 @@
 .engineering-main-image {
     height: 100vh;
     width: 100%;
-    background-image: url(../images/engineeringmain.jpg);
+    background-image: url(../images/engineeringmain.webp);
     filter:brightness(40%);
     background-repeat: no-repeat;
     background-position: center;
@@ -118,7 +118,7 @@
 }
 
 .engineering-card-image.c2 {
-    background-image: url(../images/engineering2.png);
+    background-image: url(../images/engineering2.webp);
 }
 
 .engineering-card-image.c3 {

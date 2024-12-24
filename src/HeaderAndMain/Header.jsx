@@ -5,7 +5,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Preloader from '../MainDivs/Preloader';
-import { useInView } from 'react-intersection-observer';
+import './width.css'
 
 export default function Header() {
   const { t, i18n } = useTranslation();
@@ -35,6 +35,7 @@ export default function Header() {
           <li><Link to="/TankinoxX/about">{t('about')}</Link></li>
           <li><Link to="/TankinoxX/technologies">{t('technologies')}</Link></li>
           <li><Link to="/TankinoxX/products">{t('products')}</Link></li>
+          <li><Link to="/TankinoxX/projects">{t('projects')}</Link></li>
           <li className="logo"><Link to="/TankinoxX">TANKİNOX</Link></li>
           <li><Link to="/TankinoxX/services">{t('services')}</Link></li>
           <li><Link to="/TankinoxX/careers">{t('careers')}</Link></li>

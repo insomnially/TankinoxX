@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import { useTranslation } from 'react-i18next';
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { Link as Link } from "react-router-dom"; // Link для маршрутизации
+import { Link as Link } from "react-router-dom";
 import '../HeaderAndMain/HeaderAndMain.css';
 
 export default function FirstDiv() {

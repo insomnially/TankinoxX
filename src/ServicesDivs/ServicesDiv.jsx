@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
@@ -8,9 +8,13 @@ export default function ServicesDiv() {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
   const navigate = useNavigate();
+        useEffect(() => {
+          document.title = t('servicesPage.title');
+        }, [t]);
+  
 
 
-  const services = [
+  const services1 = [
     {
       services1: {
         en: "Tankinox specialize at production optimization, which includes a full range of services:",
@@ -118,7 +122,7 @@ export default function ServicesDiv() {
       {t('services11')}<span>{t('services11span')}</span>{t('services11nospan')}
       </h1>
       <div className="services-items">
-        {services.map((service, index) => (
+        {services1.map((service, index) => (
           <motion.div
             key={index}
             className="services-item"

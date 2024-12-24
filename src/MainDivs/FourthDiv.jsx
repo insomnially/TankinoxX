@@ -7,17 +7,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./FourthDiv.css";
 
-import image1 from "../images/imagee8.jpg";
-import image3 from "../images/imagee10.jpg";
-import image4 from "../images/imagee11.jpg";
-import image5 from "../images/imagee2.jpg";
-import image6 from "../images/imagee1.jpg";
-import image7 from "../images/imagee3.jpg";
-import image8 from "../images/imagee6.jpg";
-import image9 from "../images/imagee5.jpg";
-import image10 from "../images/imagee4.jpg";
-import image11 from "../images/imagee7.jpg";
-import image12 from "../images/imagee12.jpg";
+import image1 from "../images/imagee8.webp";
+import image3 from "../images/imagee10.webp";
+import image4 from "../images/imagee11.webp";
+import image5 from "../images/imagee2.webp";
+import image6 from "../images/imagee1.webp";
+import image7 from "../images/imagee3.webp";
+import image8 from "../images/imagee6.webp";
+import image9 from "../images/imagee5.webp";
+import image10 from "../images/imagee4.webp";
+import image11 from "../images/imagee7.webp";
+import image12 from "../images/imagee12.webp";
 
 const images = [
   image1, image3, image4, image5, image6,

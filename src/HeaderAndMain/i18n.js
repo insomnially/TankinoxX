@@ -7,6 +7,34 @@ const resources = {
     translation: {
       about: 'About us',
       technologies: 'Technologies',
+      technologiesPage: {
+        title: "Technologies | TANKİNOX"
+      },
+      thermalPage: {
+        title: 'Thermal insulation | TANKİNOX',
+      },
+      productsPage: {
+        title: "Products | TANKİNOX"
+      },
+      careersPage: {
+        title: "Careers | TANKİNOX"
+      },
+      contactsPage: {
+        title: "Contacts | TANKİNOX"
+      },
+      servicesPage: {
+        title: "Services | TANKİNOX"
+      },
+      projectsPage: {
+        title: "Projects | TANKİNOX"
+      },
+      engineeringPage: {
+        title: "Engineering | TANKİNOX",
+      },
+      equipmentPage: {
+        title: "Equipment production | TANKİNOX",
+      },
+      projects: 'Projects',
       fifth : {
         engineering: "ENGINEERING",
         welding: "WELDING",
@@ -172,10 +200,7 @@ const resources = {
       steelTanks: "Steel Tanks",
       pressureVessels: "Pressure Vessels",
       customSolutions: "Custom Solutions",
-      industries: "INDUSTRIES",
-      foodBeverage: "Food & Beverage",
-      pharmaceutical: "Pharmaceutical",
-      energy: "Energy",
+      industries: "Contacts",
       addressLine1: "str. Industriale 1,",
       addressLine2: "st. Măgdăcești, rn. Criuleni, Republic of Moldova, MD-4829",
       phone: "+373",
@@ -239,6 +264,7 @@ const resources = {
       reliability: "Reliability",
       reliabilityText: "Our products are built to last, providing reliable performance even in the most demanding industrial environments.",
       customerFocus: "Customer Focus",
+      exampleitempage: "Example of our work:",
       customerFocusText: "We put our clients first, ensuring they receive personalized service and support tailored to their unique needs.",
       sustainability: "Sustainability",
       sustainabilityText: "TANKİNOX is committed to environmentally responsible practices. We work to reduce waste and energy usage in our production processes and strive to offer sustainable solutions whenever possible.",
@@ -507,7 +533,27 @@ const resources = {
   ru: {
     translation: {
       about: 'О нас',
+      projects: 'Проекты',
+      exampleitempage: "Пример наших работ:",
       technologies: 'Технологии',
+      productsPage: {
+        title: "Продукция | TANKİNOX"
+      },
+      contactsPage: {
+        title: "Контакты | TANKİNOX"
+      },
+      servicesPage: {
+        title: "Услуги | TANKİNOX"
+      },
+      careersPage: {
+        title: "Карьера | TANKİNOX"
+      },
+      engineeringPage: {
+        title: "Инжиниринг | TANKİNOX",
+      },
+      equipmentPage: {
+        title: "Производство оборудования | TANKİNOX",
+      },
       products: 'Продукция',
       services: 'Услуги',
       careers: 'Карьера',
@@ -657,7 +703,7 @@ const resources = {
       tankinoxProviding: "TANKİNOX предоставляет",
       services: "Услуги",
       
-      engineering: "ИНЖЕНЕРИЯ",
+      engineering: "ИНЖИНИРИНГ",
       tankinox: {
         main: "TANKİNOX ГАРАНТИРУЕТ ",
         span: "КАЧЕСТВО"
@@ -670,12 +716,18 @@ const resources = {
       clientApproach: "Несмотря на разнообразие партнерских организаций, команда TANKİNOX гарантирует индивидуальный подход к каждому клиенту.",
       costFunctionalityRatio: "Мы привлекаем лучших специалистов, чтобы обеспечить идеальное соотношение между вашими затратами и функциональностью конечного продукта.",
       footerDescription: "TANKİNOX — это специализированная компания, ориентированная на проектирование и производство высококачественных нержавеющих баков для широкого спектра промышленных применений. С богатым опытом в отрасли мы гарантируем отличное качество.",
-      aboutUsfooter: "О нас",
-      careersfooter: "Карьера",
-      contactsfooter: "Контакты",
+      aboutUsfooter: "О НАС",
+      careersfooter: "КАРЬЕРА",
+      contactsfooter: "КОНТАКТЫ",
       servicesfooter: "УСЛУГИ",
       aboutPage: {
         title: "О нас | TANKİNOX"
+      },
+      technologiesPage: {
+        title: "Технологии | TANKİNOX"
+      },
+      projectsPage: {
+        title: "Проекты | TANKİNOX"
       },
       winemaking: "Виноделие",
       brewing: "Пивоварение",
@@ -684,10 +736,7 @@ const resources = {
       steelTanks: "Стальные баки",
       pressureVessels: "Сосуды под давлением",
       customSolutions: "Индивидуальные решения",
-      industries: "ОТРАСЛИ",
-      foodBeverage: "Пищевая и напитковая промышленность",
-      pharmaceutical: "Фармацевтика",
-      energy: "Энергетика",
+      industries: "КОНТАКТЫ",
       addressLine1: "str. Industriale 1,",
       addressLine2: "st. Măgdăcești, rn. Criuleni, Republic of Moldova, MD-4829",
       phone: "+373",
@@ -915,6 +964,9 @@ const resources = {
     onMaps: "Мы на картах:",
     instagram: "Instagram: @Tankinox",
     telegram: "Telegram: @Tankinox",
+    thermalPage: {
+      title: 'Теплоизоляция | TANKİNOX',
+    },
     thermal: {
       title: "Теплоизоляция",
       subtitle: "и обшивка",
@@ -1003,7 +1055,36 @@ const resources = {
     translation: {
       about: 'Despre noi',
       technologies: 'Tehnologii',
+      exampleitempage: "Exemplu al muncii noastre:",
       products: 'Produse',
+      productsPage: {
+        title: "Produse | TANKİNOX"
+      },
+      contactsPage: {
+        title: "Contacte | TANKİNOX"
+      },
+      careersPage: {
+        title: "Cariere | TANKİNOX"
+      },
+      servicesPage: {
+        title: "Servicii | TANKİNOX"
+      },
+      technologiesPage: {
+        title: "Tehnologii | TANKİNOX"
+      },
+      projectsPage: {
+        title: "Proiecte | TANKİNOX"
+      },
+      engineeringPage: {
+        title: "Inginerie | TANKİNOX",
+      },
+      thermalPage: {
+        title: 'Izolație termică | TANKİNOX',
+      },
+      equipmentPage: {
+        title: 'Echipamente producție | TANKİNOX',
+      },
+      projects: 'Proiecte',
       fifth: {
         engineering: "INGINERIE",
         welding: "SUDARE",
@@ -1339,10 +1420,7 @@ const resources = {
       aboutTankinox: "DESPRE TANKİNOX",
       pressureVessels: "Vase sub presiune",
       customSolutions: "Soluții personalizate",
-      industries: "INDUSTRII",
-      moreproducts: "MAI MULTE PRODUSE",
-      foodBeverage: "Alimente și băuturi",
-      pharmaceutical: "Farmaceutic",
+      industries: "CONTACTE",
       energy: "Energie",
       addressLine1: "str. Industriale 1,",
       addressLine2: "st. Măgdăcești, rn. Criuleni, Republica Moldova, MD-4829",

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../HeaderAndMain/Header';
 import Footer from '../Footer/Footer';
 import './EquipmentPage.css';
@@ -11,6 +11,11 @@ import { useTranslation } from 'react-i18next';
 
 export default function EquipmentPage() {
   const { t } = useTranslation();
+
+       useEffect(() => {
+            document.title = t('equipmentPage.title');
+        }, [t]);
+
   const handleScroll = () => {
     window.scrollTo({
       top: window.innerHeight,

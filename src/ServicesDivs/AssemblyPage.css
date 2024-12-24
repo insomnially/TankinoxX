@@ -1,7 +1,7 @@
 .assembly-main-image {
     height: 100vh;
     width: 100%;
-    background-image: url(../images/assembly-main-image.jpg);
+    background-image: url(../images/assembly-main-image.webp);
     filter:brightness(40%);
     background-repeat: no-repeat;
     background-position: center;
@@ -102,12 +102,12 @@ background-attachment: scroll;
 }
 
 .assembly-card-image.c1 {
-    background-image: url(../images/imagee10.jpg);
+    background-image: url(../images/imagee10.webp);
     border: 5px solid rgb(29, 29, 29);
 }
 
 .assembly-card-image.c2 {
-    background-image: url(../images/imagee7.jpg);
+    background-image: url(../images/imagee7.webp);
     border: 5px solid  rgb(32, 1, 1);
 }
 

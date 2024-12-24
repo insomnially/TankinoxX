@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useTranslation } from 'react-i18next';
 
-import aboutimage1 from '../images/aboutimage1.jpg';
-import aboutimage2 from '../images/aboutimage2.jpg';
-import aboutimage3 from '../images/aboutimage3.jpg';
-import aboutimage4 from '../images/aboutimage4.jpg';
+import aboutimage1 from '../images/aboutimage1.webp';
+import aboutimage2 from '../images/aboutimage2.webp';
+import aboutimage3 from '../images/aboutimage3.webp';
+import aboutimage4 from '../images/aboutimage4.webp';
 
 export default function AboutSecond() {
   const { t } = useTranslation();

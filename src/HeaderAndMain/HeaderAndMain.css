@@ -17,19 +17,52 @@ li {
     text-shadow: 0 4px 8px rgba(255, 255, 255, .5);
 }
 
+.header ul li a {
+    position: relative;
+    padding-bottom: 3px;
+}
+
 li:hover {
     opacity: 0.7;
     color: rgb(218, 217, 217);
     transition: opacity .3s all .3s;
 }
+
+.header li:hover {
+    opacity: .9;
+}
+
+.header ul li::before {
+    border-bottom: 1px solid red;
+}
   
 
-ul {
+.header ul {
     display: flex;;
-    justify-content: space-between;
     flex-direction: row;
+    padding: 0px;
+    width: 100vw;
+    justify-content: space-between;
     padding: 0 50px;
-    width: 107vw;
+    
+}
+
+.header ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    height: 1px;
+    left: 0;
+    width: 0px;
+    background-color: rgb(255, 0, 0);
+    box-shadow: 0 10px 30px rgb(255, 0, 0);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.header ul li a:hover::before {
+    width: 100%;
+    z-index: -1;
 }
 
 .header {
@@ -37,11 +70,17 @@ ul {
     position: fixed;
 }
 
+.header ul li a::after {
+    left: 0;
+}
+
+
 .logo {
-    font-size: 48px;
+    font-size: 3rem;
     padding-bottom: 5px;
     font-family: Fank;
     padding-top: 16px;
+    margin-right: 15px;
     letter-spacing: 2px;
     border-top:5px solid red;
     border-radius: 50%;
@@ -52,6 +91,10 @@ ul {
         transition: all .3s ease-out;
 
     }
+}
+
+.logo a::before {
+    display: contents;
 }
 
 
@@ -92,7 +135,7 @@ ul {
     font-size: 16px;
     border-radius: 8px;
     background-color: transparent;
-    padding: 5px 15px;
+    padding: 1px 15px;
     color: white;
     border: none;
     display: flex;
@@ -100,9 +143,6 @@ ul {
     align-items: center;
     cursor: pointer;
     outline: none;
-    position: absolute;
-    right: 7%;
-    top: 27%;
     appearance: none;
     background-image: url(../images/arrowdown.png);
     background-repeat: no-repeat;
@@ -111,8 +151,6 @@ ul {
     appearance: none;
     -moz-appearance:none;
     -webkit-appearance:none;
-
-
 }
 
 .header ul li option {
@@ -124,6 +162,184 @@ ul {
         border: 0;
     }
 }
+
+
+
+@media (max-width:1100px) {
+    li {
+        display: none;
+    }
+
+    .logo {
+        display: block;
+    }
+    .header ul {
+        justify-content: center;
+        padding: 0;
+    }
+    .menu {
+        position: absolute;
+        right: 0%;
+    }
+    .menu-icon {
+        position: absolute;
+    }
+
+    .menuall {
+        display: flex;
+        position: absolute;
+        right: 0;
+        font-size: 3rem;
+        z-index: 100;
+        align-items: center;
+        padding-right: 5%;
+        padding-top: 3%;
+    }
+
+    .menuall .menu-icon {
+        opacity: 1;
+        transform: scale(1);
+        visibility: visible;
+    }
+    
+    .menuall .arrow-icon {
+        opacity: 0;
+        transform: scale(0.9);
+        visibility: hidden;
+    }
+    
+    .menuall.menu-open .menu-icon {
+        opacity: 0;
+        transform: scale(0.9);
+        visibility: hidden;
+    }
+    
+    .menuall.menu-open .arrow-icon {
+        opacity: 1;
+        transform: scale(1);
+        visibility: visible;
+    }
+    .menuall .menu-icon {
+        opacity: 1;
+        transform: scale(1);
+        visibility: visible;
+    }
+
+    .fullscreen-menu {
+        position: fixed;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(14, 13, 13, 0.99);
+        color: white;
+        z-index: 5555;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transform: scale(0.95);
+        transform: translateX(1000px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        visibility: visible;
+    }
+    
+    .fullscreen-menu.open {
+        opacity: 1;
+        transform: scale(1);
+        transform: translateX(0px);
+    }
+    
+    .fullscreen-menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap:50px;
+        width: 100%;
+        align-items: center;
+        z-index: 19999;
+        position: relative;
+        padding: 50px 100px;
+
+    }
+
+    .fullscreen-menu ul li {
+        font-size: 1rem;
+        font-family: CeraLight;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        cursor: pointer;
+
+        z-index: 999;
+        &:hover {
+            opacity: 0.7;
+            color: rgb(218, 217, 217);
+            transition: all 0.3s;
+        }
+    }
+
+    .fullscreen-menu select {
+        border-radius: 20px;
+        z-index: 555;
+        background-color: rgb(31, 31, 31);
+        color: rgb(255, 255, 255);
+        font-family: Cera;
+        font-size: 18px;
+        padding: 5px 25px;
+        outline: none;
+        border: none;
+        background-image: url(../images/arrowdown.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 25%;
+        appearance: none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        position: absolute;
+        top: 0;
+      }
+
+      .fullscreen-menu select option {
+        color: rgb(255, 255, 255);
+
+      }
+
+      .imagep {
+        font-size: 2rem;
+        top: 43%;
+        margin: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        border-top: 5px solid red;
+        border-bottom: 5px solid red;
+        backdrop-filter: blur(2px);
+        text-align: center;
+        border-left: 0;
+        border-left: none;
+        text-shadow: 0 10px 30px rgba(255, 255, 255, 0.359);
+
+    }
+
+    
+    .arrow {
+        display: none;
+    }
+
+    .imagep::before {
+        display: none;
+    }
+
+    .red1 {
+        height: 150px;
+        width:5px;
+        left: -3%;
+        position: absolute;
+        display: contents;
+    }
+
+}
+
 
 
 
@@ -149,6 +365,7 @@ ul {
         text-shadow: 0 10px 30px rgba(255, 255, 255, 0.359);
 
     }
+
     
     .arrow {
         display: none;
@@ -174,25 +391,22 @@ ul {
         font-size: 40px;
     }
 
+
+    .header ul {
+        padding: 0;
+        justify-content: center;
+    }
     ul {
         justify-content: center;
         padding: 0;
         align-items: center;
     }
 
-    .menu {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        top: 33%;
-        right: 0%;
-    }
-
     .menuall {
         display: flex;
         position: absolute;
-        right: 15%;
-        top: 58%;
+        right: 10%;
+        top: 45%;
         font-size: 40px;
         z-index: 100;
         align-items: center;
@@ -200,7 +414,7 @@ ul {
 
     .header ul {
         position: fixed;
-        width: 100%;
+        width: 100vw;
     }
     
     .menuall svg {
@@ -241,6 +455,7 @@ ul {
         position: fixed;
         display: flex;
         height: 100%;
+        width: 100%;
         background-color: rgba(14, 13, 13, 0.99);
         color: white;
         z-index: 5555;
@@ -273,7 +488,7 @@ ul {
     .image {
         background-position: center !important;
         background-size: cover !important;
-        background-image: url(../images/main-image.jpg);
+        background-image: url(../images/main-image.webp);
         background-attachment: scroll;
     }
 

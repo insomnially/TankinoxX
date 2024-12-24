@@ -1,7 +1,7 @@
 .equipment-main-image {
     height: 100vh;
     width: 100%;
-    background-image: url(../images/equipmentimage.jpg);
+    background-image: url(../images/equipmentimage.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -195,7 +195,7 @@
 }
 
 .equipment-card-image.c2 {
-    background-image: url(../images/equipment2.jpg);
+    background-image: url(../images/equipment2.webp);
     border-top-right-radius: 100px ;
 }
 

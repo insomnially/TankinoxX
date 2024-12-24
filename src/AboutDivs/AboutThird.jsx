@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './AboutThird.css';
-import bgImage1 from '../images/aboutimage5.jpg';
-import bgImage2 from '../images/aboutimage6.jpg';
-import bgImage3 from '../images/aboutimage7.jpg';
+import bgImage1 from '../images/aboutimage5.webp';
+import bgImage2 from '../images/aboutimage6.webp';
+import bgImage3 from '../images/aboutimage7.webp';
 import bgImage4 from '../images/image4.jpg';
 import { useTranslation } from 'react-i18next';
 

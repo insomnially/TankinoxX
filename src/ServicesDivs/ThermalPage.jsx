@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../HeaderAndMain/Header';
 import Footer from '../Footer/Footer';
 import SmoothScroll from '../MainDivs/SmoothScroll';
@@ -11,6 +11,11 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 
 export default function ThermalPage() {
     const { t } = useTranslation();
+
+           useEffect(() => {
+                document.title = t('thermalPage.title');
+            }, [t]);
+
     const { ref: buttonRef, inView: buttonInView } = useInView({ triggerOnce: true, threshold: 0.2 });
     const handleScroll = () => {
         window.scrollTo({

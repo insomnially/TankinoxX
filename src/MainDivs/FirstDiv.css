@@ -40,7 +40,7 @@
   }
 
   .imagefirst {
-    background-image: url(../images/imagefirstdiv1.png);
+    background-image: url(../images/imagefirstdiv1.webp);
     background-repeat: no-repeat;
     background-size: 130%;
     filter: brightness(100%);
@@ -148,7 +148,7 @@
 }
 
 .image {
-    background-image: url(../images/main-image.png);
+    background-image: url(../images/main-image.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

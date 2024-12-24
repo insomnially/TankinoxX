@@ -16,6 +16,7 @@ import ThermalPage from './ServicesDivs/ThermalPage';
 import CuttingPage from './ServicesDivs/CuttingPage';
 import WeldingPage from './ServicesDivs/WeldingPage'
 import AssemblyPage from './ServicesDivs/AssemblyPage';
+import { Projects } from './Pages/Projects';
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
@@ -44,6 +45,7 @@ function AppContent() {
           <Route path="/TankinoxX/services" element={<Services />} />
           <Route path="/TankinoxX/careers" element={<Careers />} />
           <Route path="/TankinoxX/contacts" element={<Contacts />} />
+          <Route path="/TankinoxX/projects" element={<Projects />} />
           {/* Products */}
           <Route path="/TankinoxX/products/overview" element={<Products />} />
           <Route path="/TankinoxX/products/item/:id" element={<ItemPage />} />

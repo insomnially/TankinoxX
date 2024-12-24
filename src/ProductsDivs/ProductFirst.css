@@ -208,7 +208,7 @@
 
 .products-first-left1 {
     width: 100%;
-    background-image: url(../images/othercip1.png);
+    background-image: url(../images/othercip1.webp);
     background-size: 55%;
     filter: drop-shadow(0 10px 30px rgb(77, 77, 77));
     background-position: center;
@@ -250,7 +250,7 @@
 .product-first1-image {
     width: 55%;
     height: 100%;
-    background-image: url(../images/imagefirstdiv1.png);
+    background-image: url(../images/imagefirstdiv1.webp);
     background-size: cover;
     background-position: center;
     filter: brightness(90%);

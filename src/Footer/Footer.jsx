@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="footer-container">
       <div className="footer-content">
         <div className="footer-left">
-          <div className="logofooter"><img src={logo}></img></div>
+          <div className="logofooter"><Link to='/TankinoxX'><img src={logo}></img></Link></div>
           <p className="footer-description">
             {t("footerDescription")}
           </p>
@@ -31,27 +31,19 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-column">
-          <h1>{t("servicesfooter")}</h1>
+          <h1><Link to='/TankinoxX/services'>{t("servicesfooter")}</Link></h1>
           <ul>
-            <li>{t("winemaking")}</li>
-            <li>{t("brewing")}</li>
-            <li>{t("chemicalStorage")}</li>
+            <li><Link to='/TankinoxX/services/engineering'>{t("fifth.engineering")}</Link></li>
+            <li><Link to='/TankinoxX/services/welding'>{t("fifth.welding")}</Link></li>
+            <li><Link to='/TankinoxX/services/cutting-and-stamping'>{t("fifth.stamping")}</Link></li>
           </ul>
         </div>
         <div className="footer-column">
-          <h1>{t("productsfooter")}</h1>
+          <h1><Link to='/TankinoxX/products'>{t("productsfooter")}</Link></h1>
           <ul>
-            <li>{t("steelTanks")}</li>
-            <li>{t("pressureVessels")}</li>
-            <li>{t("customSolutions")}</li>
-          </ul>
-        </div>
-        <div className="footer-column">
-          <h1>{t("industries")}</h1>
-          <ul>
-            <li>{t("foodBeverage")}</li>
-            <li>{t("pharmaceutical")}</li>
-            <li>{t("energy")}</li>
+            <li style={{textTransform: 'uppercase'}}><Link to='/TankinoxX/products/item/0'>{t("productFirst.item1")}</Link></li>
+            <li style={{textTransform: 'uppercase'}}><Link to='/TankinoxX/products/item/1'>{t("productFirst.item2")}</Link></li>
+            <li style={{textTransform: 'uppercase'}}><Link to='/TankinoxX/products/item/2'>{t("productFirst.item3")}</Link></li>
           </ul>
         </div>
       </div>

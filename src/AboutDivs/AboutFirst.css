@@ -1,9 +1,8 @@
 .aboutfirst-container {
     width: 100%;
-    height: 70vh;
+    height: 100%;
+    padding: 50px;
     margin-top: 150px;
-    padding-right: 50px;
-    padding: 0 380px 0 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,10 +32,12 @@
 
 .aboutfirst-2 {
     text-align: center;
+    max-width: 1200px;
 
 }
 .aboutfirst-1 {
     text-align: center;
+    max-width: 1200px;
 }
 
 @media (max-width:768px) {

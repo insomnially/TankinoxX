@@ -38,6 +38,37 @@
     animation: fadeIn 1s ease forwards;
 }
 
+.footer-column a {
+    color: #878686;
+}
+
+.footer-column h1 a {
+    color: white;
+    transition: all .5s;
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.logofooter img {
+    cursor: pointer;
+    transition: all .5s;
+    filter: drop-shadow(0px 10px 10px rgba(255, 0, 0, 0.521));
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.footer-navigation2 li a {
+    color: white;
+}
+
+.socials a {
+    color: white;
+}
+
+
+
 
 .footer-column {
     display: flex;
