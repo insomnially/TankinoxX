@@ -462,7 +462,7 @@
         border-top: 5px solid red;
         border-bottom: 5px solid red;
         margin-top: 100%;
-        width: 90%;
+        width: 83%;
         border-left: none;
         padding: 30px;
         backdrop-filter: blur(5px);
@@ -501,7 +501,7 @@
 
     .welding-items3 {
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
     }
 
     .welding-items3-left,
@@ -530,6 +530,13 @@
         gap: 30px;
     }
 
+    .welding-item-image2.m3 {
+        width: 50%;
+    }
+
+    .welding-plasma-title p {
+        max-width: 100%;
+    }
     .welding-items2 {
         flex-direction: column;
     }
