@@ -350,11 +350,12 @@ li:hover {
         box-sizing:content-box;
     }
     .imagep {
-        font-size: 2rem;
+        font-size: 1.5rem;
         top: 43%;
         margin: 0;
         left: 0;
         width: 95%;
+        overflow: hidden;
         padding: 10px;
         border-top: 5px solid red;
         border-bottom: 5px solid red;
@@ -479,6 +480,7 @@ li:hover {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        margin-top: 70px;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -502,7 +504,7 @@ li:hover {
     }
 
     .fullscreen-menu ul li {
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-family: CeraLight;
         display: flex;
         justify-content: center;
