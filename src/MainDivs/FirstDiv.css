@@ -50,9 +50,9 @@
   }
 
   .imagesecond {
-    background-image: url(../images/firstdivimage.png);
+    background-image: url(../images/stainlesswheating.webp);
     background-repeat: no-repeat;
-    background-size: 145%;
+    background-size: 90%;
     filter: brightness(100%);
     background-position: center;
     width: 60%;

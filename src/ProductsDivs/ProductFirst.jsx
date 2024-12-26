@@ -8,9 +8,6 @@ import img2 from '../images/XXLTANKS.png';
 import img3 from '../images/ASEPTICTANKS.png';
 import img4 from '../images/INSULATEDTANKS.png';
 import img5 from '../images/ALCOHOLTANKS.png';
-import img6 from '../images/PHARMACOSMTANKS.png';
-import img7 from '../images/CHEMICALPHARMATANKS.png';
-import img8 from '../images/CIPSTATIONTANKS.png';
 import img9 from '../images/HEATCOOLTANKS.png';
 import img10 from '../images/FLATTANKS.png';
 import img11 from '../images/CONICALTANKS.png';
@@ -36,7 +33,7 @@ export default function ProductFirst() {
   const { ref: leftRef, inView: leftInView } = useInView({ triggerOnce: true, threshold: 0.2 });
   const { ref: rightRef, inView: rightInView } = useInView({ triggerOnce: true, threshold: 0.2 });
   const itemBackgroundsBlock1 = [img1, img2, img3, img4];
-  const itemBackgroundsBlock2 = [img5, img6, img7, img8, img9, img10, img11, img12];  
+  const itemBackgroundsBlock2 = [img5, img9, img10, img11, img12];  
   const advantages = [1, 2, 3];
 
   const staticText = t("animatedText.staticText");
@@ -53,13 +50,10 @@ export default function ProductFirst() {
 
   const itemsBlock2 = [
     { id: 4, title: "ALCOHOL TANKS", image: img5 },
-    { id: 5, title: "PHARMA TANKS", image: img6 },
-    { id: 6, title: "CHEMICAL TANKS", image: img7 },
-    { id: 7, title: "CIP STATIONS", image: img8 },
-    { id: 8, title: "HEAT TANKS", image: img9 },
-    { id: 9, title: "FLAT TANKS", image: img10 },
-    { id: 10, title: "CONICAL TANKS", image: img11 },
-    { id: 11, title: "TOROSPHERIC TANKS", image: img12 },
+    { id: 5, title: "HEAT TANKS", image: img9 },
+    { id: 6, title: "FLAT TANKS", image: img10 },
+    { id: 7, title: "CONICAL TANKS", image: img11 },
+    { id: 8, title: "TOROSPHERIC TANKS", image: img12 },
   ];
 
   useEffect(() => {

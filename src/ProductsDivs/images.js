@@ -22,18 +22,19 @@ import imgother9 from '../images/otherheating.webp';
 import imgother10 from '../images/otherflat.webp';
 import imgother11 from '../images/othertor.webp';
 import imgother12 from '../images/othercone.webp';
-import imagegg1 from '../images/stainlesstankitem.webp';
+import imagegg1 from '../images/main-image.webp';
 import imagegg2 from '../images/stainlessphoto.webp';
 import imagegg3 from '../images/stainlesstankitem2.webp';
-import imagegg4 from '../images/stainlesstankitem3.webp';
-import imagegg5 from '../images/stainlesstankitem4.webp';
-import imagegg6 from '../images/heatingjacket2.webp';
+import imagegg6 from '../images/stainlesstankitem3.webp';
+import imagegg4 from '../images/stainlesstankitem4.webp';
+import imagegg5 from '../images/heatingjacket2.webp';
 import welding1 from '../images/stainlesswitem1.webp';
 import welding2 from '../images/stainlesswitem2.webp';
 import welding3 from '../images/stainlesswitem3.webp';
 import heatingjacket1 from '../images/heatingjacket3.webp';
 import heatingjacket2 from '../images/heatingjacket4.webp';
 import heatingjacket3 from '../images/heatingjacket5.webp';
+import heatingjacket4 from '../images/heatingjacket6.webp';
 import heatingjacketw1 from '../images/heatingjacketw1.webp';
 import heatingjacketw2 from '../images/heatingjacketw2.webp';
 import flatitem1 from '../images/flatitem1.webp';
@@ -46,7 +47,7 @@ import flatitem7 from '../images/flatitem7.webp';
 import flatitem8 from '../images/flatitem8.webp';
 import flatitem9 from '../images/flatitem9.webp';
 import conicalitem1 from '../images/conicalitem1.webp';
-import conicalitem2 from '../images/conicalitem2.jpg';
+import conicalitem2 from '../images/conicalitem2.webp';
 import conicalitem3 from '../images/conicalitem3.webp';
 import conicalitem4 from '../images/conicalitem4.webp';
 import conicalitem5 from '../images/conicalitem5.webp';
@@ -69,6 +70,12 @@ import alcoholitem3 from '../images/alcoholitem3.webp';
 import alcoholitem4 from '../images/alcoholitem4.webp';
 import alcoholitem5 from '../images/alcoholitem5.webp';
 import alcoholitem6 from '../images/alcoholitem6.webp';
+import asepticitem1 from '../images/asepticitem1.webp';
+import asepticitem2 from '../images/asepticitem2.webp';
+import asepticitem3 from '../images/asepticitem3.webp';
+import asepticitem4 from '../images/asepticitem4.webp';
+import asepticitem5 from '../images/asepticitem5.webp';
+import asepticitem6 from '../images/asepticitem6.webp';
 
 
 export default {
@@ -77,9 +84,10 @@ export default {
   imgother5, imgother6, imgother7, imgother8, imgother9,
   imgother10, imgother11, imgother12, imagegg1, imagegg2,
   imagegg3, imagegg4, imagegg5, imagegg6, welding1, welding2,
-  welding3, heatingjacket1, heatingjacket2, heatingjacket3, heatingjacketw1, 
+  welding3, heatingjacket1, heatingjacket2, heatingjacket3, heatingjacket4, heatingjacketw1, 
   heatingjacketw2, flatitem1, flatitem2, flatitem3, flatitem4, flatitem5, flatitem6,
   flatitem7, flatitem8, flatitem9, conicalitem1, conicalitem2, conicalitem3, conicalitem4, conicalitem5, conicalitem6,
   conicalitem7, conicalitem8, conicalitem9, xxlitem1, xxlitem2, xxlitem3, xxlitem4, xxlitem5, xxlitem6,
   xxlitem7, xxlitem8, xxlitem9, alcoholitem1, alcoholitem2, alcoholitem3, alcoholitem4, alcoholitem5, alcoholitem6,
+  asepticitem1, asepticitem2, asepticitem3, asepticitem4, asepticitem5, asepticitem6,
 };

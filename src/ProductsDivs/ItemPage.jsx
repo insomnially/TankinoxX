@@ -19,9 +19,7 @@ export default function ItemPage() {
   const { id } = useParams();
   
   const {
-    img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12,
-    imgother1, imgother2, imgother3, imgother4, imgother5, imgother6, imgother7, 
-    imgother8, imgother9, imgother10, imgother11, imgother12,
+    img1, img2, img3, img4, img5, img9, img10, img11, img12, imgother2, imgother3, imgother4, imgother5, imgother6, imgother9, imgother10, imgother11, imgother12,
   } = images;
 
   const [open, setOpen] = useState(false);
@@ -84,7 +82,12 @@ export default function ItemPage() {
       image: img3,
       imageother1: imgother3,
       galleryImages: [
-        images.xxlitem1,
+        images.asepticitem1,
+        images.asepticitem2,
+        images.asepticitem3,
+        images.asepticitem4,
+        images.asepticitem5,
+        images.asepticitem6,
       ],
     },
     3: {
@@ -111,33 +114,6 @@ export default function ItemPage() {
       ],
     },
     5: {
-      title: t('item.title.pharmaceutical_tanks'),
-      description: t('item.description.pharmaceutical_tanks'),
-      image: img6,
-      imageother1: imgother7,
-      galleryImages: [
-        images.xxlitem1,
-      ],
-    },
-    6: {
-      title: t('item.title.chemical_tanks'),
-      description: t('item.description.chemical_tanks'),
-      image: img7,
-      imageother1: imgother1,
-      galleryImages: [
-        images.xxlitem1,
-      ],
-    },
-    7: {
-      title: t('item.title.cip_tanks'),
-      description: t('item.description.cip_tanks'),
-      image: img8,
-      imageother1: imgother8,
-      galleryImages: [
-        images.xxlitem1,
-      ],
-    },
-    8: {
       title: t('item.title.heat_cool_tanks'),
       description: t('item.description.heat_cool_tanks'),
       image: img9,
@@ -145,16 +121,16 @@ export default function ItemPage() {
       galleryImages: [
         images.heatingjacket2,
         images.heatingjacket3,
-        images.imagegg4,
-        images.imagegg6,
+        images.imagegg5,
         images.heatingjacket1,
-        images.imagegg1,
+        images.heatingjacket4,
+        images.imagegg6,
         images.welding3,
         images.heatingjacketw1,
         images.heatingjacketw2,
       ],
     },
-    9: {
+    6: {
       title: t('item.title.flat_tanks'),
       description: t('item.description.flat_tanks'),
       image: img10,
@@ -171,7 +147,7 @@ export default function ItemPage() {
         images.flatitem9,
       ],
     },
-    10: {
+    7: {
       title: t('item.title.conical_tanks'),
       description: t('item.description.conical_tanks'),
       image: img11,
@@ -180,15 +156,15 @@ export default function ItemPage() {
         images.conicalitem1,
         images.conicalitem2,
         images.conicalitem3,
-        images.conicalitem7,
-        images.conicalitem8,
-        images.conicalitem9,
+        images.asepticitem1,
+        images.asepticitem2,
+        images.asepticitem4,
         images.conicalitem6,
         images.conicalitem4,
         images.conicalitem5,
       ],
     },
-    11: {
+    8: {
       title: t('item.title.torospheric_tanks'),
       description: t('item.description.torospheric_tanks'),
       image: img12,
