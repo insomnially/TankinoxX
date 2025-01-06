@@ -280,24 +280,24 @@ export default function ItemPage() {
         </motion.h1>
 
         <motion.div
-        className="itempage-gallery"
-        initial={{ opacity: 0, x: -20 }}
-        animate={contentInView ? { opacity: 1, x: 0 } : {}}
-        transition={{ duration: 0.8, delay: 1.4 }}
-      >
-        {item.galleryImages.map((image, index) => (
-          <motion.div
-            key={index}
-            className="item-page-item"
-            style={{ backgroundImage: `url(${image})` }}
-            alt={item.title}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
-            onClick={() => handleOpenModal(image)}
-          />
-        ))}
-      </motion.div>
+  className="itempage-gallery"
+  initial={{ opacity: 0, x: -20 }}
+  animate={contentInView ? { opacity: 1, x: 0 } : {}}
+  transition={{ duration: 0.8, delay: 1.4 }}
+>
+  {item.galleryImages.map((image, index) => (
+    <motion.div
+      key={index}
+      className="item-page-item"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6, delay: index * 0.2 }}
+      onClick={() => handleOpenModal(image)}
+    >
+      <img src={image} alt={item.title} className="item-page-image" />
+    </motion.div>
+  ))}
+</motion.div>
 
       <Modal open={open} onClose={handleCloseModal} center>
         {currentImage && (

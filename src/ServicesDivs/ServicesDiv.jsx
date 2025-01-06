@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import './ServicesDiv.css';
+import SmoothScroll from '../MainDivs/SmoothScroll';
 
 export default function ServicesDiv() {
   const { t, i18n } = useTranslation();
@@ -121,7 +122,7 @@ export default function ServicesDiv() {
       <h1 className="services-h1">
       {t('services11')}<span>{t('services11span')}</span>{t('services11nospan')}
       </h1>
-      <div className="services-items">
+      <div className="services-items" style={{marginBottom:100}}>
         {services1.map((service, index) => (
           <motion.div
             key={index}
