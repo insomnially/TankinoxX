@@ -8,19 +8,19 @@
     width: 450px;
     height: 500px;
     border-radius: 25px;
-    box-shadow: 0px 10px 30px rgb(29, 0, 0);
+    box-shadow: 0px 10px 30px rgb(61, 0, 0);
     color: rgb(255, 255, 255);
     font-family: CeraLight;
     font-weight: 1;
     font-size: .8rem;
     cursor: pointer;
     text-align: center;
-    text-shadow: 0px 5px 20px rgba(255, 255, 255, .2);
+    text-shadow: 0px 5px 20px rgba(255, 255, 255, .4);
     align-items: center;
     display: flex;
-    background: linear-gradient(rgba(255, 0, 0, 0.2),rgba(32, 32, 32, 0.2));
+    background: rgb(13, 13, 13);
     justify-content: center;
-    border: 5px solid rgb(255, 255, 255,.2);
+    border: 5px solid rgb(75, 74, 74);
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     &:hover {
@@ -124,7 +124,6 @@
     align-items: center;
     gap: 50px;
     flex-wrap: wrap;
-    margin-bottom: 100px;
 }
 
 

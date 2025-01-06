@@ -7,8 +7,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 10px 30px rgb(43, 42, 42);
-    background-color: rgb(51, 50, 50);
 }
 
 .aboutfirst-1 h1, .aboutfirst-2 h1 {

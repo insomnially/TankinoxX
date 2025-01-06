@@ -6,6 +6,7 @@
     background-size: cover;
     background-position: center;
     filter: brightness(50%);
+    border-bottom: 5px solid red;
 }
 
 .equipmentp {
@@ -139,7 +140,7 @@
   
 
 .equipment-card.c1 {
-    background: rgba(0, 0, 0, 0.111);
+    background: rgba(13, 13, 13, 1);
     text-align: left;
     display: flex;
     flex-direction: row;

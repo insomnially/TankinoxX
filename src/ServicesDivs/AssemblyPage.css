@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-bottom: 5px solid red;
 }
 
 .assemblyp {
@@ -209,7 +210,7 @@ background-attachment: scroll;
 }
 
 .assembly-title h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-shadow: 0 10px 30px rgba(255, 0, 0, 0.485);
     font-family: CeraProBold;
 }
@@ -217,11 +218,16 @@ background-attachment: scroll;
     text-align: center;
 }
 
+.assembly-title p {
+    font-size: 1rem;
+}
+
 .assembly-kipia {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .assembly-border{
@@ -257,6 +263,7 @@ background-attachment: scroll;
 .assembly-kipia ul {
     width: 100%;
     flex-direction: column;
+    
 }
 
 .assembly-div2 {
@@ -271,15 +278,18 @@ background-attachment: scroll;
 
 .assembly-kipia p {
     margin: 25px 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: CeraProBold;
     text-shadow: 0 10px 30px rgba(255, 255, 255, 0.448);
     width: 50%;
+    text-align: left;
 }
 
 .assembly-kipia ul li {
     padding: 15px 0;
     cursor: default;
+    font-size: 1.5rem;
+    text-align: left;
     &:hover {
         opacity: 1;
         color: white;
@@ -300,9 +310,13 @@ background-attachment: scroll;
     width: 80%;
 }
 
+.assembly-title p {
+    font-size: 1.3rem;
+    text-shadow: 0 10px 30px;
+}
+
 .t-assembly {
-    font-size: 1.25rem;
-    width: 50%;
+    width: 80%;
     text-shadow: 0 10px 30px rgba(255, 255, 255, 0.497);
 }
 
@@ -427,8 +441,17 @@ background-attachment: scroll;
         padding: 15px;
     }
 
+    .assembly-kipia ul li {
+        width: 95%;
+    }
+
+    .assembly-title h1 {
+        font-size: 2.5rem;
+    }
+
     .assembly-kipia p {
         width: 100%;
+        text-align: center;
     }
 
     .assembly-title {

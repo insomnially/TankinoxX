@@ -131,7 +131,6 @@ export default function AssemblyPage() {
                 >
                     <div className="assembly-title">
                         <h1>{t('assemblyPage.kipia.title')}</h1>
-                        <p>{t('assemblyPage.kipia.description1')}</p>
                         <p className='t-assembly'>{t('assemblyPage.kipia.description2')}</p>
                     </div>
 

@@ -80,6 +80,7 @@
     width: 300px;
     height: 450px;
     display: flex;
+    background-color: rgb(13, 13, 13);
     cursor: pointer;
     flex-direction: column-reverse;
     align-items: center;
@@ -90,7 +91,10 @@
     padding: 15px;
     font-weight: 1;
     font-family: CeraLight;
-    box-shadow: 0 10px 30px rgba(95, 95, 95, 0.3);
+    box-shadow: 0 10px 30px rgba(160, 160, 160, 0.5);
+    &:hover {
+        box-shadow: 0 10px 30px rgba(175, 175, 175, .5);
+    }
 }
 
 .item p {

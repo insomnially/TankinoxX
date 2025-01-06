@@ -9,6 +9,7 @@
     height: 100vh;
     overflow: hidden;
     z-index: 0;
+    border-bottom: 5px solid red;
     
 }
 

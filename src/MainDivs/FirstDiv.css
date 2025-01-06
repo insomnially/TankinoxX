@@ -152,10 +152,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
-    filter: brightness(70%);
+    filter: brightness(80%);
     overflow: hidden;
     z-index: 2;
     display: flex;
@@ -163,6 +165,7 @@
     align-items: flex-end;
     float: left;
     position: relative;
+    border-bottom: 5px solid rgb(255, 0, 0);
     
 }
 

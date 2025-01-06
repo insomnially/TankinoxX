@@ -1,12 +1,15 @@
 :root {
   color: rgba(255, 255, 255, 0.87);
-  background-color: #131313;
+  backdrop-filter: brightness(50%);
+  height: 100%;
   font-family: Cera;
   padding: 0;
   margin: 0;
   overflow: auto;
   height: auto;
   scroll-behavior: smooth;
+  background-image: url(./images/backgroundsite.jpg);
+  background-repeat: no-repeat;
 }
 
 html {
