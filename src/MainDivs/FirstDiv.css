@@ -284,9 +284,9 @@
     }
 
     :root {
-        background-image: url(../images/backgroundsite.jpg);
         background-attachment: fixed;
         background-position: center;
+        background-size: cover;
     }
     .imagefirst {
         width: 90%;
