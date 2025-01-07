@@ -309,6 +309,7 @@ li:hover {
         margin: 0;
         left: 0;
         max-width: 100%;
+        width: 100%;
         padding: 10px;
         border-top: 5px solid red;
         border-bottom: 5px solid red;
@@ -319,6 +320,7 @@ li:hover {
         text-shadow: 0 10px 30px rgba(255, 255, 255, 0.359);
 
     }
+    
 
     
     .arrow {
@@ -353,6 +355,7 @@ li:hover {
         left: 0;
         bottom: 40%;
         max-width: 95%;
+        width: 95%;
         overflow: hidden;
         position: absolute;
         padding: 10px;
