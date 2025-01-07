@@ -282,6 +282,12 @@
         margin-bottom: 100px;
         box-shadow: 0 0 0;
     }
+
+    :root {
+        background-image: url(../images/backgroundsite.jpg);
+        background-attachment: fixed;
+        background-position: center;
+    }
     .imagefirst {
         width: 90%;
         animation-delay: 1.5s;
