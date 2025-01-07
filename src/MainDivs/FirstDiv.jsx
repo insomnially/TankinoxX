@@ -41,15 +41,15 @@ export default function FirstDiv() {
       animate={imageInView ? { opacity: 1 } : {}}
       transition={{ duration: 1 }}
       ref={imageRef}>
-        </motion.div>
-
-      <motion.h1
+              <motion.h1
        className='imagep'
        onClick={handleScroll}
        >
        <div className="arrow"><MdOutlineArrowOutward/></div>
        {t('highQualityTitle')}
        </motion.h1>
+        </motion.div>
+
 
       <motion.div
         className="containerfirst"
