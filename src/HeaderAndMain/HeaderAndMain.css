@@ -306,10 +306,9 @@ li:hover {
 
       .imagep {
         font-size: 2rem;
-        top: 43%;
         margin: 0;
         left: 0;
-        width: 100%;
+        max-width: 100%;
         padding: 10px;
         border-top: 5px solid red;
         border-bottom: 5px solid red;
@@ -352,8 +351,8 @@ li:hover {
     .imagep {
         font-size: 1.5rem;
         left: 0;
-        top: 50%;
-        width: 95%;
+        bottom: 40%;
+        max-width: 95%;
         overflow: hidden;
         position: absolute;
         padding: 10px;
@@ -365,6 +364,12 @@ li:hover {
         border-left: none;
         text-shadow: 0 10px 30px rgba(255, 255, 255, 0.359);
 
+    }
+
+    .image {
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
 
     :root {
