@@ -285,6 +285,8 @@
 
     :root {
         background-attachment: scroll;
+        background-color: rgb(13, 13, 13);
+        background-image: none;
         background-position: center;
         background-size: cover;
     }

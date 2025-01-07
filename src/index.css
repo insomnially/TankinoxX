@@ -10,7 +10,6 @@
   scroll-behavior: smooth;
   background-image: url(./images/backgroundsite.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 html {
