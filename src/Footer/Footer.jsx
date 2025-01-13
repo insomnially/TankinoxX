@@ -49,14 +49,12 @@ export default function Footer() {
       </div>
       <div className="footer-contact">
         <div className='footer-contact-red'>
-          <span className="red2"></span>
           <p>
             <span>{t("addressLine1")}</span><br />
             {t("addressLine2")}
           </p>
         </div>
         <div className="footer-contact-right">
-          <span className="red3"></span>
           <p>{t("phone")} <span className='numberfont'>(999) 999-99-99</span></p>
           <p className='footer-contact-right-mail'>{t("email")}</p>
         </div>

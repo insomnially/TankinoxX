@@ -126,7 +126,8 @@
 }
 
 .products-first-container6 {
-    background-color: rgba(22, 21, 26, 0.733);
+    background-color: rgba(22, 21, 26, 1);
+    border-top: 5px solid rgb(0, 0, 0);
     width: 100vw;
     padding: 0 150px;
     height: 100vh;

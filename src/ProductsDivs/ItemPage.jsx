@@ -155,10 +155,10 @@ export default function ItemPage() {
       galleryImages: [
         images.conicalitem1,
         images.conicalitem2,
-        images.conicalitem3,
         images.asepticitem1,
         images.asepticitem2,
         images.asepticitem4,
+        images.conicalitem3,
         images.conicalitem6,
         images.conicalitem4,
         images.conicalitem5,

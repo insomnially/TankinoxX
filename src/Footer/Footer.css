@@ -232,6 +232,9 @@ a {
         display: flex;
         flex-direction: column;
         gap: 100px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
     }
     .footer-container {
         height: 100%;
@@ -242,6 +245,8 @@ a {
         padding: 25px 50px 25px 50px;
 
     }
+
+
 
     .logofooter {
         font-size: 50px;
@@ -279,6 +284,13 @@ a {
         display: flex;
         justify-content: center;
         text-align: left;
+        border-left: 2px solid red;
+        padding: 10px;
+    }
+
+    .footer-contact-red {
+        border-left: 2px solid red;
+        padding: 10px;
     }
     .socials {
         justify-content: flex-start;

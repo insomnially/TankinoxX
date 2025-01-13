@@ -22,7 +22,7 @@ import imgother9 from '../images/otherheating.webp';
 import imgother10 from '../images/otherflat.webp';
 import imgother11 from '../images/othertor.webp';
 import imgother12 from '../images/othercone.webp';
-import imagegg1 from '../images/main-image.webp';
+import imagegg1 from '../images/stainlessitem111.webp';
 import imagegg2 from '../images/stainlessphoto.webp';
 import imagegg3 from '../images/stainlesstankitem2.webp';
 import imagegg6 from '../images/stainlesstankitem3.webp';
